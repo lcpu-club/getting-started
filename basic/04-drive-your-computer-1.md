@@ -690,10 +690,8 @@ alias c++='c++-14'
 
 - 所有平台：
   - `VLC`：一款开源播放器。官网：[官方下载：VLC media player，最棒的开源播放器 - VideoLAN](https://www.videolan.org/vlc/index.zh_CN.html)
-
 - Windows：
   - `Potplayer`：一款老牌的播放器，功能强大。官网：https://potplayer.tv/?lang=zh_CN
-  
 - MacOS：
   - `IINA`：VLC的重新封装，界面美观
 
@@ -702,10 +700,8 @@ alias c++='c++-14'
 
 - Windows：
   - `Internet Download Manager`：功能强大的一款下载器。同网络环境下，相比于浏览器自带下载功能，提速明显，且可以从网页中下载视频、图片。但是收费。
-
 - MacOS：
   - `Free Download Manager`：官网[Free Download Manager for Mac | Download](https://www.freedownloadmanager.org/zh/download-fdm-for-mac.htm)
-
 `Aria2`是一款不错的下载器。多个平台都有，但是使用门槛较高。官网：[GitHub - aria2/aria2: aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.](https://github.com/aria2/aria2)
 
 
@@ -715,7 +711,6 @@ alias c++='c++-14'
 主要针对Windows。
 
 - `火绒`：轻量小巧，~~用于关闭Windows Defender~~，且有许多实用功能。但杀毒能力不强。
-
 - `Windows Defender`：杀毒能力强，默认自带。但是容易误杀，需要花点时间摸清楚配置。愿意挨个设置白名单的话，还是很好用的。
 
 
@@ -723,14 +718,11 @@ alias c++='c++-14'
 
 - 浏览器插件：
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
-
 - `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS和Mac可以在App Store找到。Android可以在Google Play找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend: An open-source cross-platform alternative to AirDrop](https://github.com/localsend/localsend)
-
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie: An all-purpose window upscaler for Windows 10/11.](https://github.com/Blinue/Magpie)
 - `Geek`：Windows上的一款卸载软件，可以卸载各个软件的残留。官网：[Geek Uninstaller - the best FREE uninstaller](https://geekuninstaller.com/)
 - `Snipaste`：多平台通用的截图软件。功能强大，非常推荐。免费版即可。官网：https://zh.snipaste.com/
 - `Everything`：文件搜索工具，搜索速度快。官网：https://www.voidtools.com/zh-cn/support/everything/
-
 - `FileConverter`：可以在很多文件格式间互转。官网：https://github.com/Tichau/FileConverter
 - `Calibre`：电子书管理器，也可以支持电子书格式转换。官网：https://calibre-ebook.com/zh_CN
 - `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
@@ -738,7 +730,6 @@ alias c++='c++-14'
 - `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。
 -  `WallpaperEngine`：可以找到Steam创意工坊上的很多壁纸。建议从Steam购买并下载。
 -  `OBS`：一款免费录屏软件，适配多平台。有虚拟摄像头等功能。官网：[Open Broadcaster Software | OBS (obsproject.com)](https://obsproject.com/)
--  `Notepad++`：一款轻量文本编辑器。有非技术性的黑历史，介意者请跳过此条。官网：[Downloads | Notepad++ (notepad-plus-plus.org)](https://notepad-plus-plus.org/downloads/)，需要较好的网络环境。
--  `Typora`：一款轻量的Markdown文件编辑器。支持部分LaTeX语法和全功能Markdown语法。收费。官网：[Typora 官方中文站 (typoraio.cn)](https://typoraio.cn/)，可能需要较好的网络环境。
+-  `Typora`：一款轻量的Markdown文件编辑器。支持部分LaTeX语法和全功能Markdown语法。收费。官网：[Typora 官方中文站 (typoraio.cn)](https://typoraio.cn/)。
 
 欢迎补充更多好用的软件！
