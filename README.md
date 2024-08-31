@@ -6,12 +6,12 @@
 
 - 01-introduction
 - 02-searching-and-question
-- 03-computer-basic-knowledges-1
+- 03-computer-basic-knowledge-1
 - 04-drive-your-computer-1
 - 05-drive-your-computer-2
 - 06-drive-your-computer-3
 - 07-drive-your-computer-4
-- 08-computer-basic-knowledges-2
+- 08-computer-basic-knowledge-2
 - 09-linux-basic-1
 - 10-linux-basic-2
 - 11-text-editing
