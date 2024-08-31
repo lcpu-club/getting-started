@@ -733,9 +733,9 @@ alias c++='c++-14'
 
 - `FileConverter`：可以在很多文件格式间互转。官网：https://github.com/Tichau/FileConverter
 - `Calibre`：电子书管理器，也可以支持电子书格式转换。官网：https://calibre-ebook.com/zh_CN
-- `Croc`：也是一款文件互传软件。官网：https://github.com/schollz/croc。优点在于可以自动打洞，不局限于局域网。
+- `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
 - [convertio](https://convertio.co)：也用于文件转换，是一个网站。
-- `wiztree`：磁盘空间分析工具。官网：https://www.diskanalyzer.com/
+- `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。
 -  `WallpaperEngine`：可以找到Steam创意工坊上的很多壁纸。建议从Steam购买并下载。
 -  `OBS`：一款免费录屏软件，适配多平台。有虚拟摄像头等功能。官网：[Open Broadcaster Software | OBS (obsproject.com)](https://obsproject.com/)
 -  `Notepad++`：一款轻量文本编辑器。有非技术性的黑历史，介意者请跳过此条。官网：[Downloads | Notepad++ (notepad-plus-plus.org)](https://notepad-plus-plus.org/downloads/)，需要较好的网络环境。
