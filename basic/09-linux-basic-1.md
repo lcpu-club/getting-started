@@ -441,7 +441,7 @@ WSL，全称为适用于Linux的Windows子系统 (Windows Subsystem on Linux)是
 
 （有的电脑没有"```虚拟机平台```"的选项，这时应勾选```Virtual Machine Platform```）
 
-<img src="/assets/basic/09-linux-basic-1/image-202409 01105227418.png" alt="image-20240901105227418" style="zoom:33%;" />
+<img src="/assets/basic/09-linux-basic-1/image-20240901105227418.png" alt="image-20240901105227418" style="zoom:33%;" />
 
 注意"```虚拟机平台```"一项实际上就是Hyper-V，勾选后会导致其余虚拟化软件性能下降。如果不勾选这一选项也可以安装WSL，但是只能使用WSL1，具体的区别会在后续说明。
 
