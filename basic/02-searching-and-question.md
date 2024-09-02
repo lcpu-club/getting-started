@@ -54,7 +54,6 @@
 
 
 
-
 ### 如何搜索？
 
 #### 关键词组合
@@ -110,7 +109,7 @@
 **GitHub** 是一个在线软件源代码托管服务平台，允许开发人员创建、存储、管理和共享他们的代码。它使用 [Git](https://git-scm.com/) 软件，为每个项目提供 Git 的分布式版本控制以及访问控制、错误跟踪、软件功能请求、任务管理、持续集成和 Wiki。
 
 你可以在 GitHub 上找到许多优秀的开源项目。一般而言，进入一个项目主页后，你可以通过查看 `Readme` 文件来快速上手如何构建或使用一个项目，同时也许可以在该文件中找到项目对应的官方文档地址和下载地址；你也可以在右侧的 `Releases` 选项中找到不同版本的安装包。当然，你也可以通过访问这些项目的 `Issues` 页面来查看其他人提出的有关该项目的问题和解答，这对你解决使用过程中遇到的问题非常有帮助。
-> *小贴士！* 如果你对 Git 感兴趣，可以提前阅读入门篇的 [第五章](05-drive-your-computer-2)。
+> *小贴士！* 如果你对 Git 感兴趣，可以提前阅读入门篇的 [第五章](/basic/05-drive-your-computer-2)。
 
 #### [知乎](https://www.zhihu.com/) / [博客园](https://www.cnblogs.com/) / [简书](https://www.jianshu.com/) / [Bilibili](https://www.bilibili.com/)
 
@@ -200,7 +199,7 @@
 
 在提问时，你需要展现出你**已经尝试过的解决方案**，表现出你为了**自己解决自己遇到的问题所付出的努力**。一方面，如果自己能够解决问题，就省去了提问所带来的时间成本，也可以减少如同 STFW 这样的回复，带来好心情；另一方面，这样可以减少重复劳动，同时也能让别人更好地理解你的问题，从而给出更准确的解答。同时，提问也应该**尽量避免无关信息**的出现，描述简介且直接。
 
-> *举个例子！* “我的电脑突然蓝屏了，我的蓝屏时候遇到的代码是 XXXXXXXX，是在游玩《黑神话·悟空》的时候突然蓝屏的。我上网搜索了代码相关的错误信息，尝试了网上可能有用的 A 方法和B 方法，但都没有奏效。能麻烦你帮我看看吗？拜托了，非常感谢！”
+> *举个例子！* “我的电脑突然蓝屏了，我的蓝屏时候遇到的代码是 XXXXXXXX，是在游玩《黑神话·悟空》的时候突然蓝屏的。我上网搜索了代码相关的错误信息，尝试了网上可能有用的 A 方法和 B 方法，但都没有奏效。能麻烦你帮我看看吗？拜托了，非常感谢！”
 > 
 > 一个较好的提问诞生了！
 
@@ -220,7 +219,7 @@
 
 GitHub Copilot 是由 GitHub 和 OpenAI 联合开发的 AI 编程助手，为多种编程语言提供智能代码补全和生成。它集成于 VS Code、Neovim 和 JetBrains IDE 等，支持多种语言如 C++、Python、Rust 等，可以根据上下文为代码提供个性化建议。
 
-> *小贴士！* 你可以通过过申请 [GitHub Student Developer Pack](https://education.github.com/pack) 来免费获得 GitHub Copilot 的使用权限。这里有一份[申请指南](https://docs.github.com/zh/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student)。但请注意，若你正在学习计算机相关课程（如计概、数算或是需要自行完成 Lab 的课程），**笔者不建议你在这个阶段过度依赖 Copilot**。
+> *小贴士！* 你可以通过过申请 [GitHub Student Developer Pack](https://education.github.com/pack) 来免费获得 GitHub Copilot 的使用权限。这里有一份[申请指南](https://docs.github.com/zh/education/explore-the-benefits-of-teaching-and-learning-with-github-education/github-education-for-students/apply-to-github-education-as-a-student)。但请注意，若你正在学习计算机相关课程（如计概、数算或是需要自行完成 Lab 的课程），**笔者不建议你在这个阶段过度依赖 Copilot**。原因也很简单，正如 Copilot 的名字所暗示的，它只是一个“协作者”，而不是“替代者”。在学习编程的过程中，你需要自己动手，自己思考，自己解决问题，这样才能更好地掌握编程技能，你的水准才会超过 Copilot，才能利用 Copilot 提高效率，而不是被 Copilot 所限制。
 
 
 + [OpenAI](https://www.openai.com/)
@@ -244,7 +243,9 @@ GitHub Copilot 是由 GitHub 和 OpenAI 联合开发的 AI 编程助手，为多
 
 ##### 具体性
 
-与搜索时的建议截然不同，在与大模型交流时，笔者**不推荐**你采用关键词组合的方式。你需要**尽可能地详细且完整**地描述你的问题。
+与搜索时的建议截然不同，在与大模型交流时，笔者**不推荐**你采用关键词组合的方式。你需要**尽可能地详细且完整**地描述你的问题。同时，大模型也可以被用来指导你如何搜索与提问。当你有一个很模糊的问题无从下手，或许可以尝试向 LLM 提问，询问可能的探索方向。
+
+同时，大模型目前基本上是“随机鹦鹉”，是一个好的 agent ，但并非是好的 solver。很多时候，你仍然需要自己思考，自己解决问题，而不是完全依赖 LLM。
 
 ##### 明确性
 
@@ -295,15 +296,6 @@ LLM 虽然收集了大量的数据，但他本质上还是一个“笨小孩”�
 > 这些数的和是：26 + 33 + 18 + 21 + 14 + 8 + 9 + 30 + 22 + 24 + 27 + 32 + 6 + 28 + 16 = 314。
 >
 > 完全正确！LLM 出色地完成了任务！
-
-
-
-
-
-
-
-
-
 
 
 > *小贴士！* 你可以在 [提示工程指南](https://www.promptingguide.ai/zh) 中获取更多相关的知识。
