@@ -15,13 +15,13 @@
 
 冯诺依曼提出了一种计算机架构，由运算器、控制器、存储器、输入输出设备组成，不区分代码和数据。现代计算机基本都基于这个架构进行设计。
 
-![Von Neumann Architecture](/assets/basic/02-computer-basic-knowledge-1/Von_Neumann_Architecture.svg)
+![Von Neumann Architecture](/assets/basic/03-computer-basic-knowledge-1/Von_Neumann_Architecture.svg)
 
 #### CPU
 
 CPU是整个计算机的核心，具有运算和控制的功能。CPU从存储设备中读取代码和数据，尽管现代处理器对代码和数据会有不同的处理，但是其本质上并没有严格的区分。代码由一条一条的指令组成，CPU按照顺序一条一条执行从存储设备中读取的指令（至少让软件和程序员看到的必须是这样），指令可以是修改CPU的状态，进行运算，或者是从其他硬件读取信息或者输出信息。
 
-![Intel 8086](/assets/basic/02-computer-basic-knowledge-1/Intel_C8086.jpg)
+![Intel 8086](/assets/basic/03-computer-basic-knowledge-1/Intel_C8086.jpg)
 
 图1. 这是Intel 8086处理器，和现在的处理器“长相”很不一样，但是你案头的计算机用的处理器很可能与之兼容（除非你是新版Apple或者你自己知道你用的不是x86架构的处理器）。图源自wiki，获CC BY-SA授权
 
@@ -51,7 +51,7 @@ CPU是整个计算机的核心，具有运算和控制的功能。CPU从存储�
 
 有时候也被称作“内存”或者“外存”（是不是有些混乱？），不过你只需要记住我们这里讲的是断电数据不丢失的可以反复改写的存储设备即可。目前市面上主要有两种硬盘，一种是机械硬盘HDD，里面有一组镜子一样的盘片，旁边有一个磁头。机械硬盘工作时，盘片高速运转，磁头读写其中的内容；另一种是固态硬盘SSD，里面没有高速运转的机械结构，取而代之的是储存芯片和控制电路。固态硬盘具有较为明确的寿命特点，其写入次数有限，且长时间不通电时不能保证数据稳定（以年为单位计算）。为了最大化固态硬盘寿命，其一般有较为复杂的控制电路，保证写入均匀地发生在固态硬盘的不同部位。一般来说，固态硬盘较贵，速度较快，长时间存放稳定性较差，但是个人日常使用的实际寿命并不一定比机械硬盘差。总之，重要数据应该做好备份。
 
-![HDD](/assets/basic/02-computer-basic-knowledge-1/Laptop-hard-drive-exposed.jpg)
+![HDD](/assets/basic/03-computer-basic-knowledge-1/Laptop-hard-drive-exposed.jpg)
 图2. 机械硬盘内部结构。图源自wiki，获CC BY-SA授权
 
 提示：如果你在比较早的时候接触过或者从长辈口中听说过“磁盘碎片”这回事，请注意，固态硬盘尽量不要整理磁盘碎片。
