@@ -81,7 +81,9 @@
 :::
 
 > [!IMPORTANT] 试一试！
+> 
 > The Book 几乎是学习 Rust 语言的必读书目。你能尝试找到其英文原版的官方网站主页地址吗？
+
 
 ### 信息平台
 
@@ -106,6 +108,10 @@
 
 > [!IMPORTANT] 试一试！
 > $\LaTeX$ 是在论文写作中非常常用的排版工具。你能尝试找到其官方文档的地址吗？
+
+> [!IMPORTANT] 试一试！
+> 
+> 本 wiki 由 vitepress 强力驱动，你能尝试在其官方文档中找到如何修改右侧的目录栏吗？
 
 #### [Stack Overflow](https://stackoverflow.com/)
 
@@ -333,7 +339,8 @@ A：生成的20个正整数是：15, 26, 33, 7, 18, 5, 21, 14, 8, 9, 30, 22, 11,
 :::
 
 
-::: tip 小贴士！你可以在 [提示工程指南](https://www.promptingguide.ai/zh) 中获取更多相关的知识。
+::: tip 小贴士！
+你可以在 [提示工程指南](https://www.promptingguide.ai/zh) 中获取更多相关的知识。
 :::
 
 ---
