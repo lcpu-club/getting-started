@@ -11,10 +11,10 @@
 - 05-drive-your-computer-2
 - 06-drive-your-computer-3
 - 07-drive-your-computer-4
-- 08-computer-basic-knowledge-2
-- 09-linux-basic-1
-- 10-linux-basic-2
-- 11-text-editing
+- 09-computer-basic-knowledge-2
+- 10-linux-basic-1
+- 11-linux-basic-2
+- 12-text-editing
 
 新增内容应该开分支，上传，开 PR，Review 后合并。
 

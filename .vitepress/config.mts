@@ -23,11 +23,12 @@ export default defineConfig({
             { text: '4. 用好你的电脑 I: 环境配置，常用软件选择、安装与卸载', link: '/basic/04-drive-your-computer-1'},
             { text: '5. 用好你的电脑 II: 版本控制，Git和文件备份', link: '/basic/05-drive-your-computer-2'},
             { text: '6. 用好你的电脑 III: 小知识串讲，网络资源获取 ', link: '/basic/06-drive-your-computer-3'},
-            { text: '7. 用好你的电脑 IV: 网络安全和编程语言', link: '/basic/07-drive-your-computer-4'},
-            { text: '8. 计算机基本知识概览 II: 基本体系结构和网络知识', link: '/basic/08-computer-basic-knowledge-2'},
-            { text: '9. Linux 基础知识：虚拟机和基本操作', link: '/basic/09-linux-basic-1'},
-            { text: '10. Linux 基础知识: 环境配置和常用操作', link: '/basic/10-linux-basic-2'},
-            { text: '11. 文本编辑: Markdown, LaTexX, Typst 和 Beamer', link: '/basic/11-text-editing'},
+            { text: '7. 用好你的电脑 IV: 网络安全', link: '/basic/07-drive-your-computer-4'},
+            { text: '8. 用好你的电脑 V: 操作系统和编程语言', link: '/basic/08-drive-your-computer-5'},
+            { text: '9. 计算机基本知识概览 II: 基本体系结构和网络知识', link: '/basic/09-computer-basic-knowledge-2'},
+            { text: '10. Linux 基础知识：虚拟机和基本操作', link: '/basic/10-linux-basic-1'},
+            { text: '11. Linux 基础知识: 环境配置和常用操作', link: '/basic/11-linux-basic-2'},
+            { text: '12. 文本编辑: Markdown, LaTexX, Typst 和 Beamer', link: '/basic/12-text-editing'},
           ]
         }
       ],
