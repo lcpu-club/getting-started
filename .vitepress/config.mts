@@ -10,6 +10,16 @@ export default defineConfig({
   rewrites: {
 
   },
+  markdown: {
+    container: {
+      tipLabel: '提示',
+      warningLabel: '警告',
+      dangerLabel: '危险',
+      infoLabel: '信息',
+      detailsLabel: '详细信息'
+    },
+    math: true
+  },
   themeConfig: {
     i18nRouting: false,
     sidebar: {
@@ -28,7 +38,7 @@ export default defineConfig({
             { text: '9. 计算机基本知识概览 II: 基本体系结构和网络知识', link: '/basic/09-computer-basic-knowledge-2'},
             { text: '10. Linux 基础知识：虚拟机和基本操作', link: '/basic/10-linux-basic-1'},
             { text: '11. Linux 基础知识: 环境配置和常用操作', link: '/basic/11-linux-basic-2'},
-            { text: '12. 文本编辑: Markdown, LaTexX, Typst 和 Beamer', link: '/basic/12-text-editing'},
+            { text: '12. 文本编辑: Markdown, LaTeX, Typst 和 Beamer', link: '/basic/12-text-editing'},
           ]
         }
       ],
@@ -91,6 +101,6 @@ export default defineConfig({
           }
         }
       }
-    }
+    },
   }
 })
