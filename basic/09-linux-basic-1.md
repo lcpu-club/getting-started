@@ -1,8 +1,13 @@
 # Linux 与服务器介绍与基本使用 I
 
-本文作者为[孙远航](https://github.com/leavelet)。
+::: info 本文信息
+作者：leavelet
+
+状态：未审阅的草稿版本
 
 注：本文的部分材料来自北京大学超算队“HPC From Scratch“课程第一讲(Linux 与命令行入门)[https://wiki.lcpu.dev/zh/hpc/from-scratch/01-linux-git-101]。
+
+:::
 
 ## 前言
 

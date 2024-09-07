@@ -1,3 +1,11 @@
+# 驱动你的设备 I：环境配置，常用软件选择、安装与卸载
+
+::: info 本文信息
+作者：decmofofs [https://github.com/decmofofs]
+
+状态：未审阅的草稿版本
+:::
+
 # 前言
 
 随着信息技术的快速发展，电脑已经成为学习和生活中最重要的工具之一。无论你是不是计算机相关专业的学生，电脑都是学习、娱乐中必不可少的伙伴。正因为如此，我们希望大家能够真正掌握电脑的使用技巧，充分发挥它的潜力。
@@ -6,9 +14,7 @@
 
 通过本文以及接下来的文章，你将接触一些好用的软件，知晓文件到底是什么，熟悉工作环境的安装配置；进而学会高效管理文件，运用版本控制工具，分析解决常见的故障；寻找自己所需的各类资源，并在此过程中规避常见的网络攻击。希望大家通过掌握这些技能，可以如意地使用电脑，让它成为自己的左膀右臂。
 
-**注**：本文主要由(@decmofofs)[https://github.com/decmofofs]编写。非常感谢(@leavelet)[https://github.com/leavelet]和(@李尚泽)[https://github.com/LSZ2005]的帮助。
-
-**注**：本文版权属于LCPU（Linux Club of Peking University），用作LCPU Getting Started项目，转载请注明出处。联系方式：linuxclub@pku.edu.cn
+**注**：本文的完成感谢(leavelet)[https://github.com/leavelet]和(李尚泽)[https://github.com/LSZ2005]的帮助。
 
 # 1. 基本环境配置
 
