@@ -99,6 +99,12 @@
 
 一般而言，你可以在相应技术的官网上找到官方文档的入口。比如 Python 的官方文档就可以在 [Python 官网](https://www.python.org/) 上找到。
 
+除此之外，很多Linux命令行工具带有丰富的mandoc文档，可以通过man命令查看。man也含有关于Linux系统调用，POSIX规范和其他杂项手册。比如输入``` man signal.7 ```可以看到Unix信号的介绍，输入``` man signal.2 ```可以看到``` signal() ```系统调用的相关信息，而输入``` man signal.3 ```可以看到POSIX规范中``` signal() ```这个API的定义和用法。
+
+::: tip 小贴士！
+man的用法可以通过man man查阅。你可能会疑惑，在刚刚的例子中，最后的点后面的数字是什么意思，在读完man的用法之后相信你就明白了！
+:::
+
 ![python_doc](../assets/basic/02-searching-and-question/python_doc.png)
 
 <center style="font-size:14px;color:#C0C0C0;">Python 官方文档</center>
