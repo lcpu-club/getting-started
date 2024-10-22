@@ -30,24 +30,24 @@ Linux 遵循 GNU 通用公共许可证（GPL），任何个人和机构都可以
 
 - 正式版与测试版：对于初学者来说应选择正式版，如果想为体验新功能并为其纠错等可以选择测试版系统。测试版系统的生命周期会远低于正式版系统，需要及时更新以获得软件支持，一般官方网站也会提供相应的测试版下载渠道。特别地，Ubuntu系统还有着长期支持版（LTS），在每个偶数年的4月一更，相比其他版本生命周期更长。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831200902600.png" alt="image-20240831200902600" style="zoom:50%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831200902600.png" alt="image-20240831200902600" style="zoom:50%;" />
 
 (如图，20年发布的Ubuntu 20.04 LTS至今仍在提供更新，而非LTS版最早只支持到23年发布的Ubuntu 23.10)
 
 
 - 桌面版、服务器版与其他版本：同一个发行版会根据用途来分为不同子版本，功能有所差异，如服务器版很多不带有图形界面。用于日常使用建议下载桌面版(desktop)，用于部署服务器则考虑Server版，其他情况应按需选择。
 
-![image-20240831201200824](/assets/basic/10-linux-basic-2/image-20240831201200824.png)
+![image-20240831201200824](/assets/basic/11-linux-basic-2/image-20240831201200824.png)
 
 - 镜像的种类（安装方式）：以debian 12.x为例，官方提供了两种安装方式：较小的网络安装包与完整的离线安装包，前者需要联网进行安装，后者安装过程无需联网。由于官网连接速度不稳定所以一般选择下载完整的安装映像（这里的iso文件的链接表示直接下载镜像文件，torrent种子需用第三方下载器来下载镜像文件）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831201443388.png" alt="image-20240831201443388" style="zoom: 50%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831201443388.png" alt="image-20240831201443388" style="zoom: 50%;" />
 
 ##### b. U盘的刻录
 
 加载映像文件并运行安装程序需要系统重新引导，一般的处理方式为将其刻录至U盘中，再让电脑启动这个U盘中的安装文件。一般使用第三方镜像刻录软件完成这一步骤。这里笔者使用rufus（也可以使用UltraISO，不过这个是收费软件）来进行刻录（[下载链接](https://rufus.ie/zh/)）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831202651295.png" alt="image-20240831202651295" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831202651295.png" alt="image-20240831202651295" style="zoom:33%;" />
 
 如图，在第一栏“设备”处选择你的U盘，然后点击“选择”并选择指定安装镜像，然后点击下面的“开始”即可完成刻录。注意刻录会将U盘内原有数据清空，请注意备份数据。U盘大小只要足够装得下镜像文件即可。
 
@@ -65,7 +65,7 @@ Linux 遵循 GNU 通用公共许可证（GPL），任何个人和机构都可以
 
 打开控制面板->硬件和声音->电源选项，找到左边的“选择电源按钮的功能”，进入这个界面。有的电脑在关机设置这里会有一个“启用快速启动”选项打勾，若有这个选项我们需要将其关闭，先点击“更改当前不可用的设置”来获取管理员权限，然后再将其取消勾选。有的机型的快速启动设置还会在BIOS中的Boot中，需要进入BIOS修改。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831204242101.png" alt="image-20240831204242101" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831204242101.png" alt="image-20240831204242101" style="zoom: 33%;" />
 
 BIOS的进入：开启电脑时出现电脑品牌图标的时候按F2键或Delete键会进入BIOS（部分电脑可能会是F1、F12或Esc键）。有的BIOS厂商做了图形界面，可以直接图形化显示引导项，将刻录好的U盘拖拽到第一项即可。若没有图形化界面，则在Boot栏中调整启动顺序，使U盘为第一引导项。
 
@@ -75,41 +75,41 @@ BIOS的进入：开启电脑时出现电脑品牌图标的时候按F2键或Delet
 
 进入后会出现几个选项，这里是在选择安装类型，简单起见这里选择第一项，使用图形界面安装
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205318293.png" alt="image-20240831205318293" style="zoom: 80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205318293.png" alt="image-20240831205318293" style="zoom: 80%;" />
 
 语言、键盘配置与地区选择、用户名的设置可按照自己的偏好来选，主机名、域名等也可自行设置。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205502046.png" alt="image-20240831205502046" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205502046.png" alt="image-20240831205502046" style="zoom:80%;" />
 
 在linux系统中root账户拥有最高权限，你所选择的发行版在安装时可能会要求设置root账户密码。如果没有这一选项可以在安装系统后在终端使用passwd命令设置。
 
 若使用虚拟机或想直接安装在整个磁盘（即覆盖原有数据）可选择"使用整个磁盘"，否则需选择"手动"并找到空闲空间。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205556924.png" alt="image-20240831205556924" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205556924.png" alt="image-20240831205556924" style="zoom:80%;" />
 
 如图，这里的21.5GB即为空闲空间，我们就要在这块空间上安装系统。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205619702.png" alt="image-20240831205619702" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205619702.png" alt="image-20240831205619702" style="zoom:80%;" />
 
 若对分区操作不熟或者没有特殊需求的可以选择“对空闲区间进行自动分区”来自动完成操作。这里debian系统预留了三种分区方案可供选择。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205713350.png" alt="image-20240831205713350" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205713350.png" alt="image-20240831205713350" style="zoom:80%;" />
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205748850.png" alt="image-20240831205748850" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205748850.png" alt="image-20240831205748850" style="zoom:80%;" />
 
 如果有着自己的需求也可以在上一项选择“创建新分区”手动在其上建立新分区。主分区需采用Ext4文件系统并挂载在”/”根目录下，还需要分配空间给交换空间(swap)等，如果还想建立其他分区来挂载到其余位置可以继续操作。
 
 最后选择“完成分区操作并将修改写入磁盘”来结束操作并将改动写入磁盘，注意操作后会将所使用的磁盘空间格式化，装双系统时为避免linux系统下操作出现失误建议先在windows下清理出空闲空间再进行操作。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831205920758.png" alt="image-20240831205920758" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831205920758.png" alt="image-20240831205920758" style="zoom:80%;" />
 
 若使用网络安装则可能会有选择镜像源的选项，举例所使用的Debian12系统中自带了多个软件源来选择，一般换用国内源速度较快。如果某些发行版安装过程中没有选项则可以在安装完成后自行更换。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831210031979.png" alt="image-20240831210031979" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831210031979.png" alt="image-20240831210031979" style="zoom:80%;" />
 
 下一步选择的是安装的软件集。Debian桌面环境与标准系统工具是需要安装的，web Server、SSH Server这些服务器组件按需安装。GNOME、Xfce、KDE、cinnamon、MATE、LXDE、LXQt则是Linux的桌面环境（可以理解为图形界面），一般选择默认的GNOME，剩余的按照喜好勾选。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240831210119209.png" alt="image-20240831210119209" style="zoom:80%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240831210119209.png" alt="image-20240831210119209" style="zoom:80%;" />
 
 接下来即可顺利完成安装。等到系统安装完成，重启过程中显示“请移除安装介质后ENTER”或已经重启完毕后再拔掉U盘，然后即可进入系统。若是双系统则也可按照喜好更改GRUB引导方式。
 
@@ -449,7 +449,7 @@ WSL，全称为适用于Linux的Windows子系统 (Windows Subsystem on Linux)是
 
 （有的电脑没有"```虚拟机平台```"的选项，这时应勾选```Virtual Machine Platform```）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901105227418.png" alt="image-20240901105227418" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901105227418.png" alt="image-20240901105227418" style="zoom:33%;" />
 
 注意"```虚拟机平台```"一项实际上就是Hyper-V，勾选后会导致其余虚拟化软件性能下降。如果不勾选这一选项也可以安装WSL，但是只能使用WSL1，具体的区别会在后续说明。
 
@@ -457,7 +457,7 @@ WSL，全称为适用于Linux的Windows子系统 (Windows Subsystem on Linux)是
 
 去Microsoft Store中搜索你想要的Linux发行版及其版本号，随后点击"安装"，安装后点击"打开"，会弹出一个命令行窗口，需要配置一段时间。接下老会让你设置初始账户的名称与密码，然后WSL就安装完成了。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901110107708.png" alt="image-20240901110107708" style="zoom: 25%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901110107708.png" alt="image-20240901110107708" style="zoom: 25%;" />
 
 #### WSL的版本与配置
 
@@ -487,7 +487,7 @@ WSL2使用真正的Linux内核，并且支持Docker等其他高级功能。
 
 这个命令可以查看当前的WSL的状态
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901112412132.png" alt="image-20240901112412132" style="zoom:50%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901112412132.png" alt="image-20240901112412132" style="zoom:50%;" />
 
 如图，NAME表示linux系统名，VERSION表示使用的是WSL1或2，STATE表示当前是否在运行
 
@@ -563,79 +563,79 @@ wsl --import Ubuntu D:\WSL\Ubuntu D:\WSL\Ubuntu.tar --version 2
 
 首先，如图点击“创建新的虚拟机”
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002126326.png" alt="image-20240901002126326" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002126326.png" alt="image-20240901002126326" style="zoom: 33%;" />
 
 然后在新建虚拟机向导中选择“自定义”。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002156060.png" alt="image-20240901002156060" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002156060.png" alt="image-20240901002156060" style="zoom: 33%;" />
 
 硬件兼容性可以不做更改直接采用默认选项。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002224900.png" alt="image-20240901002224900" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002224900.png" alt="image-20240901002224900" style="zoom:33%;" />
 
 注意下一步的安装来源这里需要选择“稍后安装操作系统”，否则VMware会自动安装镜像文件中的系统。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002317606.png" alt="image-20240901002317606" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002317606.png" alt="image-20240901002317606" style="zoom:33%;" />
 
 在下一步中选择你想要安装的系统的版本，以这个镜像为例需要选择Debian 12.x 64位，具体需要根据你下载的镜像决定（这个选项主要需要把64位或32位看清楚，其余的不是特别重要）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002358587.png" alt="image-20240901002358587" style="zoom: 67%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002358587.png" alt="image-20240901002358587" style="zoom: 67%;" />
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002422584.png" alt="image-20240901002422584" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002422584.png" alt="image-20240901002422584" style="zoom: 33%;" />
 
 命名虚拟机中的虚拟机名称与位置可以自行修改。
 
 因虚拟机占用空间较大，故建议放在空间较为充足的磁盘。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002516660.png" alt="image-20240901002516660" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002516660.png" alt="image-20240901002516660" style="zoom:33%;" />
 
 处理器配置这里的"处理器数量"指分配的核心数量，"每个处理器的内核数量"指给每个核心分配的线程数，总共给虚拟机分配的线程数为二者乘积。
 
 若安装的系统对性能要求不高且不运行大项目则无需太多核心，2x2或4x1乃至2x1就已经很够了，不要分配太多以免主机卡顿，分配前请计算自己CPU的核心数量（如大小核需要~~鸡兔同笼~~特别计算）。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002603682.png" alt="image-20240901002603682" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002603682.png" alt="image-20240901002603682" style="zoom:33%;" />
 
 给虚拟机分配内存也是同理，不要超过主机内存的一半，如果是linux等对内存需求不高的4GB也够用，Windows可能会需要8GB及以上，内存和核心分配的具体数值可以等安装虚拟机后使用软件查看利用情况后再另行调整。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002654446.png" alt="image-20240901002654446" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002654446.png" alt="image-20240901002654446" style="zoom:33%;" />
 
 网络类型如无特殊需求可直接选用默认的网络地址转换（NAT）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002716229.png" alt="image-20240901002716229" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002716229.png" alt="image-20240901002716229" style="zoom:33%;" />
 
 I/O控制器类型与磁盘类型也可直接采用推荐选项。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002730501.png" alt="image-20240901002730501" style="zoom:25%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002730501.png" alt="image-20240901002730501" style="zoom:25%;" />
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002740664.png" alt="image-20240901002740664" style="zoom:25%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002740664.png" alt="image-20240901002740664" style="zoom:25%;" />
 
 选择磁盘时，如果有既有的虚拟机磁盘（如转移其他版本或其他软件上的虚拟机）则可选择"使用现有虚拟磁盘"一栏并直接导入。
 
 否则选择"创建新虚拟磁盘"。具体的磁盘大小根据你的用途决定，正常情况下推荐的大小就够用了。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002844318.png" alt="image-20240901002844318" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002844318.png" alt="image-20240901002844318" style="zoom: 33%;" />
 
 如果不勾选"立即分配磁盘空间"则会根据该虚拟磁盘储存数据多少来动态占用磁盘空间（较为推荐）。
 
 将虚拟磁盘存储为单个文件会导致转移时需要分卷转移或使用较大的移动硬盘，还对磁盘的格式有限制（如U盘常用的FAT32格式单个文件最大支持4GB）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901002910526.png" alt="image-20240901002910526" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901002910526.png" alt="image-20240901002910526" style="zoom:33%;" />
 
 ##### 2.2 虚拟机的安装
 
 创建完虚拟机后可在虚拟机位置右键点击设置，可以修改先前所选的一部分内容
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901003303914.png" alt="image-20240901003303914" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901003303914.png" alt="image-20240901003303914" style="zoom:33%;" />
 
 选择设置里的硬件->CD/DVD->连接选项，改为"使用ISO映像文件"并选择你下载的发行版安装镜像。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901003803015.png" alt="image-20240901003803015" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901003803015.png" alt="image-20240901003803015" style="zoom:33%;" />
 
 当CD/DVD一栏显示正在使用…(你的ISO文件路径)的时候即可启动虚拟机，然后与正常linux系统的安装方法相同直到进入桌面。
 
 原本的"移除安装介质"（即拔掉U盘）的环节，可以右键VMware窗口右下角的光驱图标并选择"断开连接"来达到相同效果，原本的断网操作也可以右键网络图标并断开连接，等到安装完成后再右键连接。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901003954815.png" alt="image-20240901003954815" style="zoom:50%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901003954815.png" alt="image-20240901003954815" style="zoom:50%;" />
 
 ##### 2.3 VMware tools的安装
 
@@ -643,51 +643,51 @@ I/O控制器类型与磁盘类型也可直接采用推荐选项。
 
 首先需要加载VMware tools的镜像，在**系统安装完成后**如果出现了下面这个黄条就点击"安装Tools"按钮。
 
-![image-20240901102457715](/assets/basic/10-linux-basic-2/image-20240901102457715.png)
+![image-20240901102457715](/assets/basic/11-linux-basic-2/image-20240901102457715.png)
 
 如果没有这个黄条也可以在VMware的菜单栏中选择虚拟机->安装VMware Tools（第一次安装没有"重新"二字，如果你已经安装过VMware Tools了就会显示重新安装，可以根据上述功能是否正常工作判断是否需要重新安装）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901102849649.png" alt="image-20240901102849649" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901102849649.png" alt="image-20240901102849649" style="zoom:33%;" />
 
 然后你的虚拟机系统内就会以光驱的形式挂载VMware Tools的安装镜像（如果安装的是非linux虚拟机可以直接按步骤操作不在赘述，这里拿debian演示linux下的安装方式），打开这个光驱，找到VMware tools的压缩文件（即```VMwareTools-版本号.tar.gz```格式的文件）
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901103304129.png" alt="image-20240901103304129" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901103304129.png" alt="image-20240901103304129" style="zoom:33%;" />
 
 在空白位置右键选择在终端中打开（如无图形界面可用命令行打开目录```/media/cdrom0```）。在下一步操作前要保证当前账户拥有```sudo```权限。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901103513942.png" alt="image-20240901103513942" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901103513942.png" alt="image-20240901103513942" style="zoom:33%;" />
 
 然后将这个压缩文件拷贝到一个其他位置，如自己的主目录（因为原位置只读），然后再进入该目录并将其解压。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901104405772.png" alt="image-20240901104405772" style="zoom: 50%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901104405772.png" alt="image-20240901104405772" style="zoom: 50%;" />
 
 然后进入解压出来的文件夹(```./vmware-tools-distrib```)，用**sudo(管理员权限)**运行```vmware-install.pl```文件
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901104554049.png" alt="image-20240901104554049" style="zoom:50%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901104554049.png" alt="image-20240901104554049" style="zoom:50%;" />
 
 然后在如图所示第一个选项（默认选择为no）输入yes，其余的选项直接狂按Enter键走默认选项就可以，随后安装成功。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901104740639.png" alt="image-20240901104740639" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901104740639.png" alt="image-20240901104740639" style="zoom:33%;" />
 
 ##### 2.4 虚拟机的设置
 
 虚拟机与主机的信息交换方式常用三种，最简单的是将下面的“拖放”与“复制粘贴”开启。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901003411492.png" alt="image-20240901003411492" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901003411492.png" alt="image-20240901003411492" style="zoom:33%;" />
 
 或者也可以采取共享文件夹的方法，为保护主机数据建议将主机路径设置到一个独立的空文件夹内或开启只读。共享文件夹一般挂载到'```/mnt/hgfs/```'下。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901003446957.png" alt="image-20240901003446957" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901003446957.png" alt="image-20240901003446957" style="zoom:33%;" />
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901003459605.png" alt="image-20240901003459605" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901003459605.png" alt="image-20240901003459605" style="zoom:33%;" />
 
 快照功能是虚拟机相比直接装系统的一大优势，相当于将虚拟机存档。（WSL也有快照功能，不过用起来没有虚拟机的方便）。VMware菜单上三个时钟图样的表示的就是快照功能，使用"快照管理器"可以用时间轴的方式直观地展示各快照的关系并随时添加快照。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901114423930.png" alt="image-20240901114423930" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901114423930.png" alt="image-20240901114423930" style="zoom: 33%;" />
 
 还有USB的接入功能，这个功能允许直接将连在主机上的设备直接接入虚拟系统。如图，在虚拟机->可移动设备中可以找到能直接接入虚拟机的设备，若选择"连接"则会将该设备断开与主机的连接并直接接入虚拟机（比如正常模式下的键盘默认按```ctrl+alt```会将焦点移出虚拟机，无法按出linux的终端快捷键```ctrl+alt+T```，而直接连接后则可以正常使用该快捷键），常用的直接连接的设备如键盘、鼠标、移动硬盘等。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901114741910.png" alt="image-20240901114741910" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901114741910.png" alt="image-20240901114741910" style="zoom:33%;" />
 
 ## 远程连接与远程文件传输
 
@@ -726,7 +726,7 @@ ifconfig: 使用方式为在终端输入```ifconfig```或```sudo ifconfig```
 
 ip: 使用方式为在终端输入```ip addr```
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901190226341.png" alt="image-20240901190226341" style="zoom:25%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901190226341.png" alt="image-20240901190226341" style="zoom:25%;" />
 
 如图的红框内即为IPv4地址（第一个的127.0.0.1为本机地址），同理```inet6```项对应的即为IPv6地址
 
@@ -785,7 +785,7 @@ scp source destination
 ```
 其中```source```与```destination```都可以是本地目录或远程目录。本地目录与正常调用目录相同，绝对路径和相对路径都可以。而远程目录则类比linux终端中的使用方式，为```username@hostname:path```的形式（可以打开终端看一眼显示的字符就理解了）。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901194111878.png" alt="image-20240901194111878" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901194111878.png" alt="image-20240901194111878" style="zoom:33%;" />
 
 如图即为将windows系统下的文件传送至虚拟机下的示例，同理也可将远程系统的文件传送至本机或是在多个远程系统间进行复制。
 
@@ -801,7 +801,7 @@ sftp是SSH提供的一个客户端应用程序，主要用来访问SFTP服务器
 sftp username@hostname 
 ```
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901194931485.png" alt="image-20240901194931485" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901194931485.png" alt="image-20240901194931485" style="zoom:33%;" />
 
 如图，出现```sftp>```这个提示符就表示连接成功了
 
@@ -822,7 +822,7 @@ sftp内默认连接至远程主机主目录（即```~```），且远程主机的
 
 下图是一个使用sftp传送文件的示例
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901200012668.png" alt="image-20240901200012668" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901200012668.png" alt="image-20240901200012668" style="zoom:33%;" />
 
 ### SSH的密钥登录
 
@@ -893,7 +893,7 @@ windows下可以使用PuTTY，也可以使用后续介绍的VSCode
 
 首先使用VSCode下载并安装扩展"WSL"，然后选择左侧边栏的"远程资源管理器"，展开"WSL目标"，找到你的linux发行版并点击右边的右箭头"在当前窗口中连接"。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901210637302.png" alt="image-20240901210637302" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901210637302.png" alt="image-20240901210637302" style="zoom:33%;" />
 
 然后即可连接至WSL，VSCode的打开文件夹将直接打开到linux子系统对应的文件夹（若文件在windows文件系统上则会被挂载至```/mnt/盘符/...```中调用），终端也会直接调用子系统的终端
 
@@ -901,15 +901,15 @@ windows下可以使用PuTTY，也可以使用后续介绍的VSCode
 
 首先使用VSCode下载并安装扩展"Remote-SSH"
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901204654164.png" alt="image-20240901204654164" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901204654164.png" alt="image-20240901204654164" style="zoom:33%;" />
 
 然后选择左侧边栏的"远程资源管理器"，展开"远程(隧道/SSH)"，点击"SSH"右边的设置键
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901205237955.png" alt="image-20240901205237955" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901205237955.png" alt="image-20240901205237955" style="zoom:33%;" />
 
 然后选择第一项配置文件。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901205346758.png" alt="image-20240901205346758" style="zoom:33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901205346758.png" alt="image-20240901205346758" style="zoom:33%;" />
 
 然后写入如下内容（尖括号内为自己远程连接的设备信息，Port为连接的端口号）：
 
@@ -924,7 +924,7 @@ Host <hostname>
 
 然后按下```F1```或```Ctrl+Shift+P```键，输入```ssh connect```，选择"将当前窗口连接到主机"。并选择刚创建好的配置并按照要求登录。初次登录可能会占用时间设置服务器，最后若右下角可以显示SSH的目标主机表示设置成功。
 
-<img src="/assets/basic/10-linux-basic-2/image-20240901211038298.png" alt="image-20240901211038298" style="zoom: 33%;" />
+<img src="/assets/basic/11-linux-basic-2/image-20240901211038298.png" alt="image-20240901211038298" style="zoom: 33%;" />
 
 如图，远程系统的文件与命令行可以正常地在VSCode中显示。
 
