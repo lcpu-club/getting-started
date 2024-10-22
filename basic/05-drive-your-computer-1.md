@@ -14,7 +14,9 @@
 
 通过本文以及接下来的文章，你将接触一些好用的软件，知晓文件到底是什么，熟悉工作环境的安装配置；进而学会高效管理文件，运用版本控制工具，分析解决常见的故障；寻找自己所需的各类资源，并在此过程中规避常见的网络攻击。希望大家通过掌握这些技能，可以如意地使用电脑，让它成为自己的左膀右臂。
 
-**注**：本文的完成感谢(leavelet)[https://github.com/leavelet]和(李尚泽)[https://github.com/LSZ2005]的帮助。
+::: info
+本文的完成感谢(leavelet)[https://github.com/leavelet]和(李尚泽)[https://github.com/LSZ2005]的帮助。
+:::
 
 # 1. 基本环境配置
 
@@ -28,7 +30,9 @@
 
 ![process](/assets/basic/05-drive-your-computer-1/processOfCoding.png)
 
-**注**：python等**解释型**语言，只有解释器。
+::: info 提示
+python等**解释型**语言，只有解释器。
+:::
 
 读者要尤其注意“编辑”与“编译”的区别，“编辑”是我们常说的“敲代码”的过程，而“编译”是编译器将代码**翻译**成计算机能理解的二进制01101010......（也就是常说的可执行文件，如Windows中的`.exe`文件）的过程，“编辑”发生在“编译”之前的。理解这两个概念对于“编程”是至关重要的。
 
@@ -60,7 +64,9 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套Windows下的C/C++编译
 
 由于不同编译器的实现略有区别，且头文件不同（例如GCC下部分函数须引用algorithm头文件，而MSVC下无需），因此，本文档推荐在Windows下使用MinGW，在MacOS下使用 brew 来配置 GCC 编译环境。
 
-​	**注**：可能有同学知道GCC中有头文件 <bits/stdc++.h>，但是我们不推荐使用。这样做会引入所有的标准库，增加编译时间，降低编译效率。且MSVC并不含有此头文件，这样做会使得代码不可移植，因此这个头文件只适合做题时使用。**但是你上大学又不是来做题的**。
+::: warning 注意
+可能有同学知道GCC中有头文件 <bits/stdc++.h>，但是我们不推荐使用。这样做会引入所有的标准库，增加编译时间，降低编译效率。且MSVC并不含有此头文件，这样做会使得代码不可移植，因此这个头文件只适合做题时使用。**但是你上大学又不是来做题的**。
+:::
 
 <p align="center">
   <img src="/assets/basic/05-drive-your-computer-1/stdcpp.png" alt="北大学生不是做题家" width="200"/>
@@ -108,7 +114,9 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套Windows下的C/C++编译
 
 我们推荐如下插件：`C/C++`，`C/C++ Extension Pack`，`C/C++ Themes`，`Python`，`Python Debugger`，`Pylance`。
 
-**注意**：需要使用简体中文界面的同学，请搜索 “简体中文”，找到 “Chinese (Simplified)(简体中文) Language Pack for Visual Studio Code”，安装后右下角会自动提示重启VS Code并更换显示语言。
+::: info 提示
+需要使用简体中文界面的同学，请搜索 “简体中文”，找到 “Chinese (Simplified)(简体中文) Language Pack for Visual Studio Code”，安装后右下角会自动提示重启VS Code并更换显示语言。
+:::
 
 #### VS Code的工作逻辑是什么？
 
@@ -180,7 +188,9 @@ rm -rf brew-install
 
 这里如果执行`git`时，提示需要安装`Xcode Command Line Tools`，请按照提示安装。
 
-**非常值得注意的是：**M1及以后芯片的MacBook上，brew安装目录是`/opt/Homebrew`，在后续的环境配置中需要用到。
+::: info 特别提示
+M1及以后芯片的MacBook上，brew安装目录是`/opt/Homebrew`，在后续的环境配置中需要用到。
+:::
 
 安装完成后**重启终端**，通过在终端输入`brew -v`，可以查看homebrew版本。如果正确输出版本信息，表示成功安装。实际使用时，使用brew指令即可。
 
@@ -220,7 +230,9 @@ Installed
 
 然后，再设置需要的C/C++语法检查标准即可。
 
-**注意**：与Windows不同，这里的g++-14就是MacOS上g++编译器的**可执行文件**，它没有`.exe`后缀，且命名不同。
+::: info 提示
+与Windows不同，这里的g++-14就是MacOS上g++编译器的**可执行文件**，它没有`.exe`后缀，且命名不同。
+:::
 
 #### 在MacOS上运行C++程序
 
@@ -230,7 +242,9 @@ Installed
 
 - Mac上不要直接使用`g++`命令。
 
-**<u>请一定要注意第二点！</u>** 这是因为，MacOS上的Apple Clang编译器在环境中注册了`g++/gcc`这两个命令。实际上，它们都指向Apple Clang编译器，与`clang`命令**完全一致**。因此，如果直接输入`g++`，实际调用的是Apple Clang来编译，而不是我们安装的GCC。
+::: warning 注意
+请特别注意**第二点**，这是因为，MacOS上的Apple Clang编译器在环境中注册了`g++/gcc`这两个命令。实际上，它们都指向Apple Clang编译器，与`clang`命令**完全一致**。因此，如果直接输入`g++`，实际调用的是Apple Clang来编译，而不是我们安装的GCC。
+:::
 
 **解决方法有如下几种**：
 
@@ -289,7 +303,9 @@ custom_channels:
 
 ![activate](/assets/basic/05-drive-your-computer-1/activate.png)
 
-​	**注意**：windows下安装`conda`后第一次使用虚拟环境时，要先输入`mamba init`。弹出授权窗口，选是，然后**关闭终端重新打开**。
+::: info 提示
+windows下安装`conda`后第一次使用虚拟环境时，要先输入`mamba init`。弹出授权窗口，选是，然后**关闭终端重新打开**。
+:::
 
 - `mamba deactivate`：退出虚拟环境。如`conda deactivate test`，会**完全退出**conda，此后终端使用系统环境。直接输入`conda deactivate`会切换到`base`环境。
 
@@ -350,7 +366,9 @@ Set-ExecutionPolicy PolicyYouWant
 
 我们可以在powershell中输入`start $PROFILE`来打开配置文件进行编辑。
 
-**注意**：使用`code $PROFILE`从VS Code打开配置文件可能会出现问题，表现为显示未保存的空文件。此时如果保存，那么配置文件会变为空文件。
+::: warning 注意
+使用`code $PROFILE`从VS Code打开配置文件可能会出现问题，表现为显示未保存的空文件。此时如果保存，那么配置文件会变为空文件。
+:::
 
 具体的配置和美化过程较复杂，且需求因人而异。读者可以在网上查找相关资料来定制自己的终端。例如，可以查阅如下网站：https://zhuanlan.zhihu.com/p/352882990
 
@@ -359,7 +377,9 @@ Set-ExecutionPolicy PolicyYouWant
 
 MacOS终端提供了几种不同的shell，比如bash和zsh。修改这些shell的配置文件时，无需像Windows一样更改脚本执行策略。如果要修改zsh的配置文件，可以用文本编辑器打开它。例如，用VS Code打开：在VS Code内，按  Ctrl+\`打开终端，然后输入 `code ~/.zshrc` 。
 
-**注意**：没有打开VS Code的情况下，直接在系统终端输入如上命令可能发生同样的情况（显示未保存的空文件，此时如果保存，那么配置文件会变为空文件）。
+::: warning 注意
+没有打开VS Code的情况下，直接在系统终端输入如上命令可能发生同样的情况（显示未保存的空文件，此时如果保存，那么配置文件会变为空文件）。
+:::
 
 笔者在此推荐一种配置，目前正在使用：
 
@@ -406,7 +426,9 @@ alias c++='c++-14'
 
 - `./a.out < in > out`：在Linux和MacOS中，此指令可以从`in`读取输入，传递给程序`a.out`作为输入，然后把输出传到文件`out`中。这在做一些题目时非常有效，尤其是<u>程序设计实习的魔兽世界大作业</u>这类输出以MB来计数的题目。
 
-  **注意**：这会删除out文件中原本的内容。
+  ::: warning 注意
+  这会删除out文件中原本的内容。
+  :::
 
   获取输出后，可以用VS Code的**对比功能**对比自己的输出和评测系统的输出，来修正程序。
 
@@ -502,7 +524,9 @@ alias c++='c++-14'
 
 图中可以看到，ASCII编码是图中其他编码的子集，因此用它保存的文本，用其他编码都可以打开。（UTF-16，UTF-32等除外）。
 
-**注意**：我们常用的可以显示中文字符的编码是**UTF8** ，较老的文档中也会使用GB2312等国标编码，这些编码与UTF8不兼容。
+::: info 提示
+我们常用的可以显示中文字符的编码是**UTF8** ，较老的文档中也会使用GB2312等国标编码，这些编码与UTF8不兼容。
+:::
 
 记事本和VS Code都会在当前界面的右下角显示目前使用的编码格式。通常，这类文本编辑器会自行检测打开的文件使用的编码，如果检测失败，可以手动切换。
 
@@ -517,7 +541,9 @@ alias c++='c++-14'
 - **黑体**：一种无衬线字体，字形端正，笔画横平竖直，笔迹全部一样粗细。思源黑体可以免费商用。
 - **Consolas**：一种等宽字体，推荐用于编程。
 
-**注意**：部分字体不可以免费商用，需要购买许可。
+::: warning 注意
+部分字体不可以免费商用，需要购买许可。
+:::
 
 
 
@@ -582,7 +608,9 @@ alias c++='c++-14'
 
 ![qq2](/assets/basic/05-drive-your-computer-1/qq2.png)
 
+::: info 提示
 这里要**尤为注意**自己电脑的情况。一般来说，64位Windows就用默认下载按钮；而**Surface**这类**Arm**架构的Windows电脑要选择**Arm版本下载**。如果是MacBook，也要注意**Intel和Apple芯片的区别**，否则无法正常安装。
+:::
 
 ### GitHub上软件的下载
 
