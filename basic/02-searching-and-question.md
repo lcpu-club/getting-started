@@ -141,7 +141,7 @@ man的用法可以通过man man查阅。你可能会疑惑，在刚刚的例子�
 你可以在 GitHub 上找到许多优秀的开源项目。一般而言，进入一个项目主页后，你可以通过查看 `Readme` 文件来快速上手如何构建或使用一个项目，同时也许可以在该文件中找到项目对应的官方文档地址和下载地址；你也可以在右侧的 `Releases` 选项中找到不同版本的安装包。当然，你也可以通过访问这些项目的 `Issues` 页面来查看其他人提出的有关该项目的问题和解答，这对你解决使用过程中遇到的问题非常有帮助。
 
 ::: tip 小贴士！
-如果你对 Git 感兴趣，可以提前阅读入门篇的 [第五章](/basic/05-drive-your-computer-2)。
+如果你对 Git 感兴趣，可以提前阅读入门篇的 [第六章](/basic/06-drive-your-computer-2)。
 :::
 
 #### [知乎](https://www.zhihu.com/) / [博客园](https://www.cnblogs.com/) / [简书](https://www.jianshu.com/) / [Bilibili](https://www.bilibili.com/)
