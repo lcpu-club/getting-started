@@ -1,4 +1,4 @@
-# Drive Your Computer II
+# 用好你的电脑 II
 
 ::: info 本文信息
 作者：000lbh
@@ -37,26 +37,26 @@ Git 的设计出于这样一种基本抽象：一个项目的历史记录可以�
 我们假设有一个 Git 仓库（Repository），里面有两个文件 A 和 B。仓库之前有提交记录。此时你开始基于之前的提交记录工作，你从历史中取出了文件 A 和 B 放到工作区（这其实是自动的）。此刻就像这样：
 
 <p align="center">
-<img src="/assets/basic/05-drive-your-computer-2/git-graph-no-modified.png" alt="areas" width="300"/>
+<img src="/assets/basic/06-drive-your-computer-2/git-graph-no-modified.png" alt="areas" width="300"/>
 </p>
 
 然后你修改了文件 A，这对 Git 的状态没有任何影响：因为你没有告诉 Git 你修改了文件 A。这时候你可以把文件 A 放到暂存区，这样 Git 就知道你修改了文件 A。这时候 Git 的状态是这样的：
 
 
 <p align="center">
-<img src="/assets/basic/05-drive-your-computer-2/git-a-changed.png" alt="areas" width="300"/>
+<img src="/assets/basic/06-drive-your-computer-2/git-a-changed.png" alt="areas" width="300"/>
 </p>
 
 然后你修改了文件 B，并把 B 放到暂存区，这时候 Git 的状态是这样的：
 
 <p align="center">
-<img src="/assets/basic/05-drive-your-computer-2/git-b-changed.png" alt="areas" width="300"/>
+<img src="/assets/basic/06-drive-your-computer-2/git-b-changed.png" alt="areas" width="300"/>
 </p>
 
 你觉得差不多了，这时你打算永久保存工作区目前的状态，就把暂存区提交到版本库，这时候 Git 的状态是这样的：
 
 <p align="center">
-<img src="/assets/basic/05-drive-your-computer-2/git-commited.png" alt="areas" width="300"/>
+<img src="/assets/basic/06-drive-your-computer-2/git-commited.png" alt="areas" width="300"/>
 </p>
 
 你的暂存区已经被保存到了版本库，就是版本 Y 节点。这时候工作区和版本库最新节点一致，暂存区是空的。

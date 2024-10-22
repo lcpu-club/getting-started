@@ -7,14 +7,15 @@
 - 01-introduction
 - 02-searching-and-question
 - 03-computer-basic-knowledge-1
-- 04-drive-your-computer-1
-- 05-drive-your-computer-2
-- 06-drive-your-computer-3
-- 07-drive-your-computer-4
-- 08-drive-your-computer-5
-- 09-linux-basic-1
-- 10-linux-basic-2
-- 11-text-editing
+- 04-computer-basic-knowledge-2
+- 05-drive-your-computer-1
+- 06-drive-your-computer-2
+- 07-drive-your-computer-3
+- 08-drive-your-computer-4
+- 09-drive-your-computer-5
+- 10-linux-basic-1
+- 11-linux-basic-2
+- 12-text-editing
 
 新增内容应该开分支，上传，开 PR，Review 后合并。
 

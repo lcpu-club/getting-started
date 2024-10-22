@@ -1,4 +1,4 @@
-# 驱动你的设备 I：环境配置，常用软件选择、安装与卸载
+# 用好你的电脑 I：环境配置，常用软件选择、安装与卸载
 
 ::: info 本文信息
 作者：decmofofs [https://github.com/decmofofs]
@@ -26,7 +26,7 @@
 
 从你的想法开始，到可执行文件，最终到一个满意的程序，有如下几个步骤。
 
-![process](/assets/basic/04-drive-your-computer-1/processOfCoding.png)
+![process](/assets/basic/05-drive-your-computer-1/processOfCoding.png)
 
 **注**：python等**解释型**语言，只有解释器。
 
@@ -63,7 +63,7 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套Windows下的C/C++编译
 ​	**注**：可能有同学知道GCC中有头文件 <bits/stdc++.h>，但是我们不推荐使用。这样做会引入所有的标准库，增加编译时间，降低编译效率。且MSVC并不含有此头文件，这样做会使得代码不可移植，因此这个头文件只适合做题时使用。**但是你上大学又不是来做题的**。
 
 <p align="center">
-  <img src="/assets/basic/04-drive-your-computer-1/stdcpp.png" alt="北大学生不是做题家" width="200"/>
+  <img src="/assets/basic/05-drive-your-computer-1/stdcpp.png" alt="北大学生不是做题家" width="200"/>
   转自2021年计算概论课程群
 </p>
 
@@ -116,7 +116,7 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套Windows下的C/C++编译
 
 如果工作区只有一个文件夹，配置会被放在该文件夹下`.vscode`文件夹中。如果有多文件夹，工作区配置会用一个`code-workspace`结尾的文件保存。
 
-![workspace](/assets/basic/04-drive-your-computer-1/workspace.png)
+![workspace](/assets/basic/05-drive-your-computer-1/workspace.png)
 
 #### VS Code如何打开文件夹、将工作设置保存到工作区便于取用？
 
@@ -136,7 +136,7 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套Windows下的C/C++编译
 4. 下拉，找到C标准和C++标准，**选择你的课程使用的在线测评网站使用的标准**。例如，两者分别选择c17和c++17。
 5. 在**刚才所选的文件夹**内创建".cpp"后缀的文件，编写你的C++程序。你会发现语法检查、include路径检查都使用了相应环境。
 
-![UI](/assets/basic/04-drive-your-computer-1/UI.png)
+![UI](/assets/basic/05-drive-your-computer-1/UI.png)
 
 #### 编译运行你的C++程序——使用终端PowerShell
 
@@ -149,7 +149,7 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套Windows下的C/C++编译
 
 效果如下图所示：
 
-![Run](/assets/basic/04-drive-your-computer-1/Run.png)
+![Run](/assets/basic/05-drive-your-computer-1/Run.png)
 
 ### 1.1.3 MacOS环境配置——以M系列芯片为例
 
@@ -199,7 +199,7 @@ rm -rf brew-install
 
 安装GCC时，使用`brew install gcc`即可。安装程序会自动进行，在电脑上安装适配的最新版本。等待安装完成后，键入`brew info gcc`查看是否安装完成。例如，在笔者的电脑上，显示如下结果：
 
-![gccinfo](/assets/basic/04-drive-your-computer-1/gccinfo.png)
+![gccinfo](/assets/basic/05-drive-your-computer-1/gccinfo.png)
 
 #### MacBook上的C/C++ Configuration UI配置
 
@@ -287,7 +287,7 @@ custom_channels:
 - `mamba create`：创建环境。参数`-n`指定环境名称，参数`python=`指定python版本。此处推荐安装好环境后再安装它的包，不要在这里指定。例如：`mamba create -n AIHomework python=3.10.11`，创建了一个名为AIHomework的环境，它的python版本是3.10.11。
 - `mamba activate`：激活环境。例如，`mamba activate test`会在当前终端激活test这个环境，激活成功后会有如下显示：
 
-![activate](/assets/basic/04-drive-your-computer-1/activate.png)
+![activate](/assets/basic/05-drive-your-computer-1/activate.png)
 
 ​	**注意**：windows下安装`conda`后第一次使用虚拟环境时，要先输入`mamba init`。弹出授权窗口，选是，然后**关闭终端重新打开**。
 
@@ -382,7 +382,7 @@ alias c++='c++-14'
 
 这个配置让终端显示了当前所在目录的全名、登录账户名、设置了前文所述的编译器别名，且个人觉得颜色在VS Code中比较好看。效果如下：
 
-![zsh](/assets/basic/04-drive-your-computer-1/zsh.png)
+![zsh](/assets/basic/05-drive-your-computer-1/zsh.png)
 
 在设置好配置文件后，保存重启终端即可。
 
@@ -498,7 +498,7 @@ alias c++='c++-14'
 
 上述文本的保存和显示需要用到**编码**。前文提到，所谓编码，就是**将字符转换为二进制数据的规则**，它是一种字符与二进制数据的对应关系，可以理解为数学上的双射。保存文本文件和打开文本文件时，分别需要选择一种编码格式。如果这两种编码格式不匹配，打开时就可能显示乱码，例如常见的**锟斤拷烫烫烫**。如果编码A是编码B的子集，那么，用A保存、用B打开也是可以的。下面这张图展示了常见编码之间的关系：
 
-![encode](/assets/basic/04-drive-your-computer-1/encode.webp)
+![encode](/assets/basic/05-drive-your-computer-1/encode.webp)
 
 图中可以看到，ASCII编码是图中其他编码的子集，因此用它保存的文本，用其他编码都可以打开。（UTF-16，UTF-32等除外）。
 
@@ -560,11 +560,11 @@ alias c++='c++-14'
 
 常用的免费/付费软件都会有一个官网。然而，由于近年来搜索引擎广告严重，许多官网难以找到，甚至人们在寻找官网的时候被带到“xx软件园”等流氓网站。因此，找到官网也成了一门技术活。
 
-![steam](/assets/basic/04-drive-your-computer-1/steam.png)
+![steam](/assets/basic/05-drive-your-computer-1/steam.png)
 
 如上图，在百度中搜索steam，第一个结果就不是官网。一般来说，搜索引擎以蓝色小块标注官网的，就是官网。
 
-![steam2](/assets/basic/04-drive-your-computer-1/steam2.png)
+![steam2](/assets/basic/05-drive-your-computer-1/steam2.png)
 
 如上图，我们采用必应搜索引擎搜索steam，此时第一个结果就是官网。选择一个好的搜索引擎对于找到软件官网很有帮助——我们推荐使用必应，有条件的可以使用谷歌，来寻找需要的软件。相信大家在第二讲中已经有所体会了。
 
@@ -572,15 +572,15 @@ alias c++='c++-14'
 
 进入官网后，一般来说软件下载按钮会出现在主页。但有时候需要耐心寻找。例如steam的安装按钮就很小：
 
-![steaminstall](/assets/basic/04-drive-your-computer-1/steaminstall.png)
+![steaminstall](/assets/basic/05-drive-your-computer-1/steaminstall.png)
 
 找到按钮，进入下载网页后，网站一般会根据电脑类型自动判断需要的**安装包**。此时，我们只需点击下载按钮，等待下载完成后打开即可；在保护比较严格的电脑上，可能会弹出风险提示，**在确认确实是要下载的软件，且软件安全后**，选是即可。如果网站没有根据电脑自动选择安装包，如下图：
 
-![qq](/assets/basic/04-drive-your-computer-1/qq.png)
+![qq](/assets/basic/05-drive-your-computer-1/qq.png)
 
 请根据自己电脑的类型来选择。例如，电脑是Windows，点进去后是如下的画面：
 
-![qq2](/assets/basic/04-drive-your-computer-1/qq2.png)
+![qq2](/assets/basic/05-drive-your-computer-1/qq2.png)
 
 这里要**尤为注意**自己电脑的情况。一般来说，64位Windows就用默认下载按钮；而**Surface**这类**Arm**架构的Windows电脑要选择**Arm版本下载**。如果是MacBook，也要注意**Intel和Apple芯片的区别**，否则无法正常安装。
 
@@ -590,11 +590,11 @@ alias c++='c++-14'
 
 （在搜索引擎上搜索你要的软件名，后面加上 GitHub，一般可以搜到它的GitHub主页）
 
-![clv](/assets/basic/04-drive-your-computer-1/clv.png)
+![clv](/assets/basic/05-drive-your-computer-1/clv.png)
 
 然后找到它的Assets部分：
 
-![assets](/assets/basic/04-drive-your-computer-1/assets.png)
+![assets](/assets/basic/05-drive-your-computer-1/assets.png)
 
 通常来讲，我们用的电脑是Arm64/amd64（x64）架构。常见的轻薄本、游戏本、台式机都是amd64（x64）架构，我们要找到对应的架构，以及后缀为`.exe`或者`.msi`的文件来安装。Linux则要找到自己的架构，且后缀为`.deb`、`.tar.gz`等的文件；MacOS用户，如果是Apple芯片，则要找到`aarch64`、`arm64`架构，`.dmg`后缀的文件来安装。如果是Intel芯片，则要找`x64`架构，`.dmg`后缀文件安装。
 
@@ -631,7 +631,7 @@ alias c++='c++-14'
 
 重要的事情说三遍。现在，请到设置的如图部分：
 
-![uninstall](/assets/basic/04-drive-your-computer-1/uninstall.png)
+![uninstall](/assets/basic/05-drive-your-computer-1/uninstall.png)
 
 点击后，搜索你要卸载的软件，然后点卸载。
 
@@ -659,7 +659,7 @@ alias c++='c++-14'
 
 北京大学为大家提供了许多正版软件，方便大家的学习、工作。首先，我们**登录门户**，找到**正版软件**并进入：
 
-![software](/assets/basic/04-drive-your-computer-1/software.png)
+![software](/assets/basic/05-drive-your-computer-1/software.png)
 
 然后在网站中找到想要的软件来下载。激活过程可能需要校园网环境。
 

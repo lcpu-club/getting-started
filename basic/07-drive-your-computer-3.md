@@ -16,14 +16,14 @@
 
 如需查看磁盘健康情况，可以使用` smartctl `命令(Linux)或者CrystalDiskInfo软件(Windows)查看。
 
-![CrystalDiskInfo](../assets/basic/06-drive-your-computer-3/image.png)
+![CrystalDiskInfo](../assets/basic/07-drive-your-computer-3/image.png)
 图1. 笔者使用CrystalDiskInfo查看磁盘信息
 
 ### 处理器与内存信息 {#cpu-mem-info}
 
 Windows下任务管理器即可，Linux下推荐` btop `程序。
 
-![任务管理器](../assets/basic/06-drive-your-computer-3/image2.png)
+![任务管理器](../assets/basic/07-drive-your-computer-3/image2.png)
 图2. 笔者使用任务管理器查看处理器占用情况，右侧菜单可以打开资源监视器，有更详细的信息。
 
 ### 电池信息 {#battery-info}
