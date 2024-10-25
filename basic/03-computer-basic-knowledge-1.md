@@ -201,10 +201,6 @@ will support anything other than AT-harddisks, as that's all I have :-(.
 
 Linux是一种类Unix操作系统，API符合POSIX标准。
 
-Linux与Windows更大的不同是，Linux属于自由软件。和Linux内核一道组成发行版的程序绝大部分也是自由软件。自由软件的源代码不仅公开，还需要能够自由传播、修改、销售，只要你遵守许可证的条件。常见的许可证包括GPL，这个许可证要求基于GPL软件的衍生作品如果发布，则也必须按照GPL发布，而MIT，BSD，Apache许可证协议则较为松散，不要求衍生作品同样按照自身许可证发布，只需要恰当署名即可。介于这两种许可之间的许可有LGPL，MPL等。Windows版权则归微软所有，其源代码仅小范围知晓，即使旧版Windows源代码已经有所泄露，由于无法取得授权，任何看到它的人也不能合法加以利用。
-
-尽管Linus最开始宣称Linux内核并不是一个portable的内核，显然，他是目前世界上最portable的内核。为什么会这样呢？这跟Linux是自由软件有很大关系。Linus相信，他向别人提供代码，别人也将代码分享给他，就是一种很好的模式。正因为有这种宽松自由的许可，使得Linux可以被任意改造去适配不同的硬件，而不需要Linus自己一个人或者几个人去完成这件事。
-
 ::: info 历史的注记
 微软在21世纪初将Linux称作“癌症”，认为Linux侵犯了知识产权，试图在客户中培育对Linux的恐慌，并以专利威胁起诉Linux开发者。然而十年后，微软表示“We love Linux”，可能是因为Linux在服务器市场占有率已经很高了。不过，由于微软曾经和网景和Sun(Java)上"Embrace, extend, and extinguish"的3E战略垄断扼杀的黑历史，大家依然对微软的举动保持警惕。  
 :::
