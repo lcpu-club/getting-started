@@ -1,15 +1,13 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  lang: "zh-CN",
-  title: "LCPU Getting Started",
-  description: "The Missing Semester refreshed by PKU Linux Club",
+  lang: 'zh-CN',
+  title: 'LCPU Getting Started',
+  description: 'The Missing Semester refreshed by PKU Linux Club',
   lastUpdated: true,
   cleanUrls: true,
-  srcExclude: [ 'README.md' ],
-  rewrites: {
-
-  },
+  srcExclude: ['README.md'],
+  rewrites: {},
   markdown: {
     container: {
       tipLabel: '提示',
@@ -28,28 +26,47 @@ export default defineConfig({
           text: '基础部分',
           items: [
             { text: '01. 简介', link: '/basic/01-introduction' },
-            { text: '02. 搜索和知识获取', link: '/basic/02-searching-and-question'},
-            { text: '03. 计算机基本知识概览 I: 软硬件和操作系统', link: '/basic/03-computer-basic-knowledge-1'},
-            { text: '04. 计算机基本知识概览 II: 计算机的评价', link: '/basic/04-computer-basic-knowledge-2'},
-            { text: '05. 用好你的电脑 I: 环境配置，常用软件选择、安装与卸载', link: '/basic/05-drive-your-computer-1'},
-            { text: '06. 用好你的电脑 II: 版本控制，Git和文件备份', link: '/basic/06-drive-your-computer-2'},
-            { text: '07. 用好你的电脑 III: 小知识串讲，网络资源获取 ', link: '/basic/07-drive-your-computer-3'},
-            { text: '08. 用好你的电脑 IV: 网络安全', link: '/basic/08-drive-your-computer-4'},
-            { text: '09. 用好你的电脑 V: 操作系统和编程语言', link: '/basic/09-drive-your-computer-5'},
-            { text: '10. Linux 基础知识：Linux 101', link: '/basic/10-linux-basic-1'},
-            { text: '11. Linux 基础知识: 虚拟机安装和常用操作', link: '/basic/11-linux-basic-2'},
-            { text: '12. 文本编辑: Markdown, LaTeX, Typst 和 Beamer', link: '/basic/12-text-editing'},
+            { text: '02. 搜索和知识获取', link: '/basic/02-searching-and-question' },
+            {
+              text: '03. 计算机基本知识概览 I: 软硬件和操作系统',
+              link: '/basic/03-computer-basic-knowledge-1'
+            },
+            {
+              text: '04. 计算机基本知识概览 II: 计算机的评价',
+              link: '/basic/04-computer-basic-knowledge-2'
+            },
+            {
+              text: '05. 用好你的电脑 I: 环境配置，常用软件选择、安装与卸载',
+              link: '/basic/05-drive-your-computer-1'
+            },
+            {
+              text: '06. 用好你的电脑 II: 版本控制，Git和文件备份',
+              link: '/basic/06-drive-your-computer-2'
+            },
+            {
+              text: '07. 用好你的电脑 III: 小知识串讲，网络资源获取 ',
+              link: '/basic/07-drive-your-computer-3'
+            },
+            { text: '08. 用好你的电脑 IV: 网络安全', link: '/basic/08-drive-your-computer-4' },
+            {
+              text: '09. 用好你的电脑 V: 操作系统和编程语言',
+              link: '/basic/09-drive-your-computer-5'
+            },
+            { text: '10. Linux 基础知识：Linux 101', link: '/basic/10-linux-basic-1' },
+            { text: '11. Linux 基础知识: 虚拟机安装和常用操作', link: '/basic/11-linux-basic-2' },
+            {
+              text: '12. 文本编辑: Markdown, LaTeX, Typst 和 Beamer',
+              link: '/basic/12-text-editing'
+            }
           ]
         }
-      ],
+      ]
     },
     outline: {
       label: '目录',
-      level: [2, 4],
+      level: [2, 4]
     },
-    socialLinks: [
-      { icon: 'github', link: 'https://github.com/lcpu-club' }
-    ],
+    socialLinks: [{ icon: 'github', link: 'https://github.com/lcpu-club' }],
     footer: {
       message: '由北京大学学生 Linux 俱乐部所著',
       copyright: '© 2024 LCPU Club, licensed under CC BY-SA 4.0'
@@ -70,11 +87,11 @@ export default defineConfig({
       pattern: 'https://github.com/lcpu-club/getting-started/edit/main/:path',
       text: '在GitHub上更新本页'
     },
-    darkModeSwitchLabel: "颜色选择",
-    lightModeSwitchTitle: "切换至亮色模式",
-    darkModeSwitchTitle: "切换至暗色模式", 
-    sidebarMenuLabel: "目录",
-    returnToTopLabel: "回到顶部",
+    darkModeSwitchLabel: '颜色选择',
+    lightModeSwitchTitle: '切换至亮色模式',
+    darkModeSwitchTitle: '切换至暗色模式',
+    sidebarMenuLabel: '目录',
+    returnToTopLabel: '回到顶部',
     externalLinkIcon: true,
     search: {
       provider: 'local',
@@ -105,6 +122,6 @@ export default defineConfig({
           }
         }
       }
-    },
+    }
   }
 })
