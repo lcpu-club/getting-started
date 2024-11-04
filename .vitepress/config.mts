@@ -18,6 +18,21 @@ export default defineConfig({
     },
     math: true
   },
+  head: [
+    [
+      'script',
+      {
+        defer: '',
+        src: 'https://report.lcpu.dev/js/script.outbound-links.tagged-events.js',
+        'data-domain': 'missing.lcpu.dev'
+      }
+    ],
+    [
+      'script',
+      {},
+      `window.plausible = window.plausible || function() { (window.plausible.q = window.plausible.q || []).push(arguments) }`
+    ]
+  ],
   themeConfig: {
     i18nRouting: false,
     sidebar: {
