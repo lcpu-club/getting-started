@@ -682,7 +682,6 @@ alias c++='c++-14'
   - `WinRAR`：老牌压缩软件。优点是可以生成 RAR 文件，且功能较全、界面不错。**请注意**：若要使用此软件，有如下注意事项：
     - 必须从英文官网下载：[WinRAR download free and support: WinRAR (win-rar.com)](https://www.win-rar.com/start.html?&L=0)中文版无论是否购买正版都有广告，而英文版无论是否购买正版都没有广告，也不会有弹窗。30 天试用期不会减少。
     - **版本号必须大于 7.0.0！！！**这是因为，以前的版本有一个重要**高危漏洞**，可以无需以`.exe`后缀存放文件，执行恶意代码。
-    - 可以参考如下网站进行**个人学习**：[GitHub - bitcookies/winrar-keygen](https://github.com/bitcookies/winrar-keygen?tab=readme-ov-file)请参考此网站的 README 的**6.3**节。
 - MacOS：
   - `MacZip`：第三方压缩软件。官网：[MacZip - 专为 macOS 而设计的压缩软件！](https://maczip.cn/?locale=zh-CN)安装后，请自行更改默认的压缩包打开方式。使用此软件，有如下优点：
     - 安装后，设置内默认勾选压缩、提取文件忽略`.DS_STORE`文件。如果需要多平台传输压缩文件，这一特性很不错。
