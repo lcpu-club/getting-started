@@ -712,20 +712,20 @@ alias c++='c++-14'
 - `Windows Defender`：杀毒能力强，默认自带。但是容易误杀，需要花点时间摸清楚配置。愿意挨个设置白名单的话，还是很好用的。
 
 ::: info Linux
-什么？你在找什么？Linux需要杀毒软件？嘿↘嘿↗，其实Linux还真有：ClamAV。(不是，哥们。你不会真要装吧?)
+什么？你在找什么？Linux 需要杀毒软件？嘿↘嘿↗，其实 Linux 还真有：ClamAV。(不是，哥们。你不会真要装吧?)
 :::
 
 ## 4.5 文本编辑软件
 
 - 所有平台：
-  - `Kate`：来自KDE的开源文本编辑器，同时具有相当的插件。官网：https://kate-editor.org/
+  - `Kate`：来自 KDE 的开源文本编辑器，同时具有相当的插件。官网：https://kate-editor.org/
   - `Visual Code`：无需多言，闻名远扬，功能极其强大。官网：https://code.visualstudio.com/Download
   - `Typora`：一款轻量的 Markdown 文件编辑器。支持部分 LaTeX 语法和全功能 Markdown 语法。收费。官网：[Typora 官方中文站 (typoraio.cn)](https://typoraio.cn/)
   - `Vim`：一款终端下的文件编辑瑞士军刀，学习难度陡峭。官网：https://www.vim.org/download.php
 - Windows：
-  - `HxD`：一款Windows二进制文本编辑器。官网：https://mh-nexus.de/en/hxd/
+  - `HxD`：一款 Windows 二进制文本编辑器。官网：https://mh-nexus.de/en/hxd/
 - Linux：
-  - `Bless`：一款Linux二进制文本编辑器。
+  - `Bless`：一款 Linux 二进制文本编辑器。
 
 ## 4.6 文献管理
 
@@ -737,11 +737,11 @@ alias c++='c++-14'
 
 - 浏览器插件：
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
-- `DISM++`: 国人出品的Windows优化工具，并整合了各类Windows工具，如WIM/ESD镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
-- `rufus`: Windows平台下USB安装介质烧录小工具。官网：https://rufus.ie/zh/
+- `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
+- `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
 - `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 Mac 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
-- `Handbrake`：使用ffmpeg作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
+- `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 - `Geek`：Windows 上的一款卸载软件，可以卸载各个软件的残留。官网：[Geek Uninstaller - the best FREE uninstaller](https://geekuninstaller.com/)
 - `Snipaste`：多平台通用的截图软件。功能强大，非常推荐。免费版即可。官网：https://zh.snipaste.com/
 - `Everything`：文件搜索工具，搜索速度快。官网：https://www.voidtools.com/zh-cn/support/everything/
@@ -749,13 +749,13 @@ alias c++='c++-14'
 - `Calibre`：电子书管理器，也可以支持电子书格式转换。官网：https://calibre-ebook.com/zh_CN
 - `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
 - [convertio](https://convertio.co)：也用于文件转换，是一个网站。
-- `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。Linux上的替代品为baobab。
+- `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。Linux 上的替代品为 baobab。
 - `WallpaperEngine`：可以找到 Steam 创意工坊上的很多壁纸。建议从 Steam 购买并下载。
 - `WinSCP`: Windows FTP/SFTP 图形客户端，官网：https://winscp.net/
 - `Audacity`: 开源的全平台音频编辑软件，易于上手，官网：https://www.audacityteam.org/
 - `GIMP`: 开源的全平台图片编辑软件，官网：https://www.gimp.org/
-- `Blender`: 开源的全平台3D编辑创作软件，使用广泛，官网：https://www.blender.org/
-- `Krita`: KDE出品的开源全平台绘图软件，官网：https://krita.org/zh-cn/
+- `Blender`: 开源的全平台 3D 编辑创作软件，使用广泛，官网：https://www.blender.org/
+- `Krita`: KDE 出品的开源全平台绘图软件，官网：https://krita.org/zh-cn/
 - `OBS`：一款免费录屏软件，适配多平台。有虚拟摄像头等功能。官网：[Open Broadcaster Software | OBS (obsproject.com)](https://obsproject.com/)
 
 欢迎补充更多好用的软件！
