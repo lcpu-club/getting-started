@@ -1,7 +1,7 @@
 # 用好你的电脑 I：环境配置，常用软件选择、安装与卸载
 
 ::: info 本文信息
-作者：decmofofs [https://github.com/decmofofs]
+作者：[decmofofs](https://github.com/decmofofs)
 
 状态：已审阅的发布版，审阅人：Horbin
 :::
@@ -15,7 +15,7 @@
 通过本文以及接下来的文章，你将接触一些好用的软件，知晓文件到底是什么，熟悉工作环境的安装配置；进而学会高效管理文件，运用版本控制工具，分析解决常见的故障；寻找自己所需的各类资源，并在此过程中规避常见的网络攻击。希望大家通过掌握这些技能，可以如意地使用电脑，让它成为自己的左膀右臂。
 
 ::: info
-本文的完成感谢(leavelet)[https://github.com/leavelet]和(李尚泽)[https://github.com/LSZ2005]的帮助。
+本文的完成感谢[leavelet](https://github.com/leavelet)和[李尚泽](https://github.com/LSZ2005)的帮助。
 :::
 
 # 1. 基本环境配置
@@ -677,12 +677,11 @@ alias c++='c++-14'
 由于各类网络资源都会使用压缩文件的方式进行发布，寻找一款好用且**不流氓**的压缩软件很有必要。下面推荐一些常用的压缩软件：
 
 - Windows：
-  - `7-zip`或者其变种`7-zip-zstd`：老牌压缩软件，能满足大部分需求。官方网站：https://www.7-zip.org/download.html；`7-zip-zstd`官方网站：[GitHub - mcmilk/7-Zip-zstd: 7-Zip with support for Brotli, Fast-LZMA2, Lizard, LZ4, LZ5 and Zstandard](https://github.com/mcmilk/7-Zip-zstd)
-  - 老版`Bandizip`：请不要升级。新版本有广告。[Bandizip - 下载 Bandizip 6.x (bandisoft.com)](https://www.bandisoft.com/bandizip/old/6/)
+  - `7-zip`或者其变种`7-zip-zstd`：老牌压缩软件，能满足大部分需求。[`7-zip`官方网站](https://www.7-zip.org/download.html)；[`7-zip-zstd`官方网站](https://github.com/mcmilk/7-Zip-zstd)
+  - 老版 `Bandizip`：请不要升级。新版本有广告。[Bandizip - 下载 Bandizip 6.x (bandisoft.com)](https://www.bandisoft.com/bandizip/old/6/)
   - `WinRAR`：老牌压缩软件。优点是可以生成 RAR 文件，且功能较全、界面不错。**请注意**：若要使用此软件，有如下注意事项：
     - 必须从英文官网下载：[WinRAR download free and support: WinRAR (win-rar.com)](https://www.win-rar.com/start.html?&L=0)中文版无论是否购买正版都有广告，而英文版无论是否购买正版都没有广告，也不会有弹窗。30 天试用期不会减少。
     - **版本号必须大于 7.0.0！！！**这是因为，以前的版本有一个重要**高危漏洞**，可以无需以`.exe`后缀存放文件，执行恶意代码。
-    - 可以参考如下网站进行**个人学习**：[GitHub - bitcookies/winrar-keygen: Principle of WinRAR key generation.](https://github.com/bitcookies/winrar-keygen?tab=readme-ov-file)请参考此网站的 README 的**6.3**节。
 - MacOS：
   - `MacZip`：第三方压缩软件。官网：[MacZip - 专为 macOS 而设计的压缩软件！](https://maczip.cn/?locale=zh-CN)安装后，请自行更改默认的压缩包打开方式。使用此软件，有如下优点：
     - 安装后，设置内默认勾选压缩、提取文件忽略`.DS_STORE`文件。如果需要多平台传输压缩文件，这一特性很不错。
@@ -703,7 +702,7 @@ alias c++='c++-14'
   - `Internet Download Manager`：功能强大的一款下载器。同网络环境下，相比于浏览器自带下载功能，提速明显，且可以从网页中下载视频、图片。但是收费。
 - MacOS：
   - `Free Download Manager`：官网[Free Download Manager for Mac | Download](https://www.freedownloadmanager.org/zh/download-fdm-for-mac.htm)
-    `Aria2`是一款不错的下载器。多个平台都有，但是使用门槛较高。官网：[GitHub - aria2/aria2: aria2 is a lightweight multi-protocol & multi-source, cross platform download utility operated in command-line. It supports HTTP/HTTPS, FTP, SFTP, BitTorrent and Metalink.](https://github.com/aria2/aria2)
+    `Aria2`是一款不错的下载器。多个平台都有，但是使用门槛较高。官网：[GitHub - aria2/aria2](https://github.com/aria2/aria2)
 
 ## 4.4 杀毒软件推荐
 
@@ -712,12 +711,37 @@ alias c++='c++-14'
 - `火绒`：轻量小巧，~~用于关闭 Windows Defender~~，且有许多实用功能。但杀毒能力不强。
 - `Windows Defender`：杀毒能力强，默认自带。但是容易误杀，需要花点时间摸清楚配置。愿意挨个设置白名单的话，还是很好用的。
 
-## 4.5 杂项
+::: info Linux
+什么？你在找什么？Linux 需要杀毒软件？嘿↘嘿↗，其实 Linux 还真有：ClamAV。(不是，哥们。你不会真要装吧?)
+:::
+
+## 4.5 文本编辑软件
+
+- 所有平台：
+  - `Kate`：来自 KDE 的开源文本编辑器，同时具有相当的插件。官网：https://kate-editor.org/
+  - `Visual Code`：无需多言，闻名远扬，功能极其强大。官网：https://code.visualstudio.com/Download
+  - `Typora`：一款轻量的 Markdown 文件编辑器。支持部分 LaTeX 语法和全功能 Markdown 语法。收费。官网：[Typora 官方中文站 (typoraio.cn)](https://typoraio.cn/)
+  - `Vim`：一款终端下的文件编辑瑞士军刀，学习难度陡峭。官网：https://www.vim.org/download.php
+- Windows：
+  - `HxD`：一款 Windows 二进制文本编辑器。官网：https://mh-nexus.de/en/hxd/
+- Linux：
+  - `Bless`：一款 Linux 二进制文本编辑器。
+
+## 4.6 文献管理
+
+- 所有平台：
+  - `Zotero`：开源且易用的文献管理软件。官网：https://www.zotero.org/
+  - `EndNote`：商业出品文献管理软件，收费。
+
+## 4.7 杂项
 
 - 浏览器插件：
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
-- `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 Mac 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend: An open-source cross-platform alternative to AirDrop](https://github.com/localsend/localsend)
-- `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie: An all-purpose window upscaler for Windows 10/11.](https://github.com/Blinue/Magpie)
+- `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
+- `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
+- `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 Mac 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
+- `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
+- `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 - `Geek`：Windows 上的一款卸载软件，可以卸载各个软件的残留。官网：[Geek Uninstaller - the best FREE uninstaller](https://geekuninstaller.com/)
 - `Snipaste`：多平台通用的截图软件。功能强大，非常推荐。免费版即可。官网：https://zh.snipaste.com/
 - `Everything`：文件搜索工具，搜索速度快。官网：https://www.voidtools.com/zh-cn/support/everything/
@@ -725,9 +749,13 @@ alias c++='c++-14'
 - `Calibre`：电子书管理器，也可以支持电子书格式转换。官网：https://calibre-ebook.com/zh_CN
 - `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
 - [convertio](https://convertio.co)：也用于文件转换，是一个网站。
-- `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。
+- `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。Linux 上的替代品为 baobab。
 - `WallpaperEngine`：可以找到 Steam 创意工坊上的很多壁纸。建议从 Steam 购买并下载。
+- `WinSCP`: Windows FTP/SFTP 图形客户端，官网：https://winscp.net/
+- `Audacity`: 开源的全平台音频编辑软件，易于上手，官网：https://www.audacityteam.org/
+- `GIMP`: 开源的全平台图片编辑软件，官网：https://www.gimp.org/
+- `Blender`: 开源的全平台 3D 编辑创作软件，使用广泛，官网：https://www.blender.org/
+- `Krita`: KDE 出品的开源全平台绘图软件，官网：https://krita.org/zh-cn/
 - `OBS`：一款免费录屏软件，适配多平台。有虚拟摄像头等功能。官网：[Open Broadcaster Software | OBS (obsproject.com)](https://obsproject.com/)
-- `Typora`：一款轻量的 Markdown 文件编辑器。支持部分 LaTeX 语法和全功能 Markdown 语法。收费。官网：[Typora 官方中文站 (typoraio.cn)](https://typoraio.cn/)。
 
 欢迎补充更多好用的软件！
