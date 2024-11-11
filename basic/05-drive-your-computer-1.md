@@ -693,6 +693,8 @@ alias c++='c++-14'
   - `VLC`：一款开源播放器。官网：[官方下载：VLC media player，最棒的开源播放器 - VideoLAN](https://www.videolan.org/vlc/index.zh_CN.html)
 - Windows：
   - `Potplayer`：一款老牌的播放器，功能强大。官网：https://potplayer.tv/?lang=zh_CN
+  - `mpv`: 一款开源播放器，需要用户自己配置。官网: https://mpv.io/
+    - 配置可参考 [mpv - ArchWiki](https://wiki.archlinux.org/title/Mpv) 和 [mpv 播放器的使用引导](https://hooke007.github.io/unofficial/mpv_start.html)
 - MacOS：
   - `IINA`：VLC 的重新封装，界面美观
 
@@ -737,8 +739,11 @@ alias c++='c++-14'
 
 - 浏览器插件：
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
+  - `uBlock Origin`: 高效的广告拦截器，Firefox 上运行效果比 Google Chrome 好些，Google Chrome 正在推行 Manifest V3 标准，uBlock Origin 可能在未来无法在 Chrome 浏览器上使用。
+  - `uBlock Origin Lite`: 符合 Manifest V3 标准的 uBlock Origin，但效果不如 uBlock Origin，因为 [Manifest V3 限制了插件访问修改网络请求](https://developer.chrome.com/docs/extensions/develop/migrate/blocking-web-requests?hl=zh-cn)。
 - `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
+- `Ventoy`: 多系统启动盘制作工具，在只有一个 U 盘的情况下想要安装多个系统就可以使用。下载：https://www.ventoy.net/cn/download.html
 - `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 Mac 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
 - `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
@@ -757,5 +762,7 @@ alias c++='c++-14'
 - `Blender`: 开源的全平台 3D 编辑创作软件，使用广泛，官网：https://www.blender.org/
 - `Krita`: KDE 出品的开源全平台绘图软件，官网：https://krita.org/zh-cn/
 - `OBS`：一款免费录屏软件，适配多平台。有虚拟摄像头等功能。官网：[Open Broadcaster Software | OBS (obsproject.com)](https://obsproject.com/)
+- `KeePassXC`: 自由开源的密码管理工具，不同于 1Password 和 Bitwarden 的是，KeePassXC 没有自带的云同步机制。官网: https://keepassxc.org/
+  - 可以自己用一些类似 WebDav 的方式实现云同步，参考: https://www.cnblogs.com/TaoSec/p/18232057
 
 欢迎补充更多好用的软件！
