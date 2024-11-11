@@ -737,7 +737,7 @@ alias c++='c++-14'
 
 - 浏览器插件：
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
-  - `uBlock Origin`: 高效的广告拦截器，Firefox 上运行效果比 Google Chrome 好些，Google Chrome 正在推行Manifest V3 标准，uBlock Origin 可能在未来无法在 Chrome 浏览器上使用。
+  - `uBlock Origin`: 高效的广告拦截器，Firefox 上运行效果比 Google Chrome 好些，Google Chrome 正在推行 Manifest V3 标准，uBlock Origin 可能在未来无法在 Chrome 浏览器上使用。
 - `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
 - `Ventory`: 多系统启动盘制作工具，在只有一个 U 盘的情况下想要安装多个系统就可以使用。下载：https://www.ventoy.net/cn/download.html
