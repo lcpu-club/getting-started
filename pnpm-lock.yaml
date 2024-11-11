@@ -11,9 +11,6 @@ importers:
       markdown-it-mathjax3:
         specifier: ^4.3.2
         version: 4.3.2
-      markdown-it-pangu:
-        specifier: ^1.0.2
-        version: 1.0.2
     devDependencies:
       prettier:
         specifier: ^3.3.3
@@ -540,9 +537,6 @@ packages:
     resolution: {integrity: sha512-/6w/C21Pm1A7aZitlI5Ni/2J6FFQN8i1Cvz3kHABAAbw93v/NlvKdVOqz7CCWz/3iv/JplRSEEZ83XION15ovw==}
     engines: {node: '>=6'}
 
-  argparse@1.0.10:
-    resolution: {integrity: sha512-o5Roy6tNG4SL/FOkCAN6RzjiakZS25RLYFrcMttJqbdd8BWrnA+fGz57iN5Pb06pvBGvl5gQ0B48dJlslXvoTg==}
-
   bail@2.0.2:
     resolution: {integrity: sha512-0xO6mYd7JB2YesxDKplafRpsiOzPt9V02ddPCLbY1xYGPOX24NTyN50qnUxgCPcSoYMhKpAuBTjQoRZCAkUDRw==}
 
@@ -642,9 +636,6 @@ packages:
 
   domutils@2.8.0:
     resolution: {integrity: sha512-w96Cjofp72M5IIhpjgobBimYEfoPjx1Vx0BSX9P30WBdZW2WIKU0T1Bd0kz2eNZ9ikjKgHbEyKx8BB6H1L3h3A==}
-
-  entities@1.1.2:
-    resolution: {integrity: sha512-f2LZMYl1Fzu7YSBKg+RoROelpOaNrcGmE9AZubeDfrCEia483oW4MI4VyFd5VNHIgQ/7qm1I0wUHK1eJnn2y2w==}
 
   entities@2.2.0:
     resolution: {integrity: sha512-p92if5Nz619I0w+akJrLZH0MX0Pb5DX39XOwQTtXSdQQOaYH03S1uIQp4mhOZtAXrxq4ViO67YTiLBo2638o9A==}
@@ -746,9 +737,6 @@ packages:
     resolution: {integrity: sha512-o+NO+8WrRiQEE4/7nwRJhN1HWpVmJm511pBHUxPLtp0BUISzlBplORYSmTclCnJvQq2tKu/sgl3xVpkc7ZWuQQ==}
     engines: {node: '>=6'}
 
-  linkify-it@2.2.0:
-    resolution: {integrity: sha512-GnAl/knGn+i1U/wjBz3akz2stz+HrHLsxMwHQGofCDfPvlf+gDKN58UtfmUquTY4/MXeE2x7k19KQmeoZi94Iw==}
-
   lodash@4.17.21:
     resolution: {integrity: sha512-v2kDEe57lecTulaDIuNTPy3Ry4gLGJ6Z1O3vE1krgXZNrsQ+LFTGHVxVjcXPs17LhbZVGedAJv8XZ1tvj5FvSg==}
 
@@ -763,13 +751,6 @@ packages:
 
   markdown-it-mathjax3@4.3.2:
     resolution: {integrity: sha512-TX3GW5NjmupgFtMJGRauioMbbkGsOXAAt1DZ/rzzYmTHqzkO1rNAdiMD4NiruurToPApn2kYy76x02QN26qr2w==}
-
-  markdown-it-pangu@1.0.2:
-    resolution: {integrity: sha512-rssyYaMKXRLMpQIUgX01VE1KYOHhlnc4t5zGTI2zgXDpE88eQz8hywa0iSzoFm3eb5CYzFWazDKdUbnyZvW0SQ==}
-
-  markdown-it@8.4.2:
-    resolution: {integrity: sha512-GcRz3AWTqSUphY3vsUqQSFMbgR38a4Lh3GWlHRh/7MRwz8mcu9n2IO7HOh+bXHrR9kOPDl5RNCaEsrneb+xhHQ==}
-    hasBin: true
 
   markdown-table@3.0.4:
     resolution: {integrity: sha512-wiYz4+JrLyb/DqW2hkFJxP7Vd7JuTDm77fvbM8VfEQdmSMqcImWeeRbHwZjBjIFki/VaMK2BhFi7oUUZeM5bqw==}
@@ -821,9 +802,6 @@ packages:
 
   mdast-util-to-string@3.2.0:
     resolution: {integrity: sha512-V4Zn/ncyN1QNSqSBxTrMOLpjr+IKdHl2v3KVLoWmDPscP4r9GcCi71gjgvUV1SFSKh92AjAG4peFuBl2/YgCJg==}
-
-  mdurl@1.0.1:
-    resolution: {integrity: sha512-/sKlQJCBYVY9Ers9hqzKou4H6V5UWc/M59TH2dvkt+84itfnq7uFOMLpOiOS4ujvHP4etln18fmIxA5R5fll0g==}
 
   mensch@0.3.4:
     resolution: {integrity: sha512-IAeFvcOnV9V0Yk+bFhYR07O3yNina9ANIN5MoXBKYJ/RLYPurd2d0yw14MDhpr9/momp0WofT1bPUh3hkzdi/g==}
@@ -980,10 +958,6 @@ packages:
   oniguruma-to-js@0.4.3:
     resolution: {integrity: sha512-X0jWUcAlxORhOqqBREgPMgnshB7ZGYszBNspP+tS9hPD3l13CdaXcHbgImoHUHlrvGx/7AvFEkTRhAGYh+jzjQ==}
 
-  pangu@4.0.7:
-    resolution: {integrity: sha512-weZKJIwwy5gjt4STGVUH9bix3BGk7wZ2ahtIypwe3e/mllsrIZIvtfLx1dPX56GcpZFOCFKmeqI1qVuB9enRzA==}
-    hasBin: true
-
   parse-entities@4.0.1:
     resolution: {integrity: sha512-SWzvYcSJh4d/SGLIOQfZ/CoNv6BTlI6YEQ7Nj82oDVnRpwe/Z/F1EMx42x3JAOwGBlCjeCH0BRJQbQ/opHL17w==}
 
@@ -1079,9 +1053,6 @@ packages:
     resolution: {integrity: sha512-sJrL3/wHzNwJRLBdf6CjJWIlxC04iYKkyXvYSVsWVOiC2DSkHmxsqOhEeMsBA9XK+CHuNcsdkbFDnoUfAsmp9g==}
     hasBin: true
 
-  sprintf-js@1.0.3:
-    resolution: {integrity: sha512-D9cPgkvLlV3t3IzL0D0YLvGA9Ahk4PcvVwUbN0dSGr1aP0Nrt4AEnTUbuGvquEC0mA64Gqt1fzirlRs5ibXx8g==}
-
   stringify-entities@4.0.4:
     resolution: {integrity: sha512-IwfBptatlO+QCJUo19AqvrPNqlVMpW9YEL2LIVY+Rpv2qsjCGxaDLNRgeGsQWJhfItebuJhsGSLjaBbNSQ+ieg==}
 
@@ -1103,9 +1074,6 @@ packages:
 
   tslib@2.8.0:
     resolution: {integrity: sha512-jWVzBLplnCmoaTr13V9dYbiQ99wvZRd0vNWaDRg+aVYRcjDF3nDksxFDE/+fkXnKhpnUUkmx5pK/v8mCtLVqZA==}
-
-  uc.micro@1.0.6:
-    resolution: {integrity: sha512-8Y75pvTYkLJW2hWQHXxoqRgV7qb9B+9vFEtidML+7koHUFapnVJAZ6cKs+Qjz5Aw3aZWHMC6u0wJE3At+nSGwA==}
 
   unified@10.1.2:
     resolution: {integrity: sha512-pUSWAi/RAnVy1Pif2kAoeWNBa3JVrx0MId2LASj8G+7AiHWoKZNTomq6LG326T68U7/e263X6fTdcXIy7XnF7Q==}
@@ -1724,10 +1692,6 @@ snapshots:
 
   ansi-colors@4.1.3: {}
 
-  argparse@1.0.10:
-    dependencies:
-      sprintf-js: 1.0.3
-
   bail@2.0.2: {}
 
   birpc@0.2.19: {}
@@ -1823,8 +1787,6 @@ snapshots:
       dom-serializer: 1.4.1
       domelementtype: 2.3.0
       domhandler: 4.3.1
-
-  entities@1.1.2: {}
 
   entities@2.2.0: {}
 
@@ -1948,10 +1910,6 @@ snapshots:
 
   kleur@4.1.5: {}
 
-  linkify-it@2.2.0:
-    dependencies:
-      uc.micro: 1.0.6
-
   lodash@4.17.21: {}
 
   longest-streak@3.1.0: {}
@@ -1968,19 +1926,6 @@ snapshots:
       mathjax-full: 3.2.2
     transitivePeerDependencies:
       - encoding
-
-  markdown-it-pangu@1.0.2:
-    dependencies:
-      markdown-it: 8.4.2
-      pangu: 4.0.7
-
-  markdown-it@8.4.2:
-    dependencies:
-      argparse: 1.0.10
-      entities: 1.1.2
-      linkify-it: 2.2.0
-      mdurl: 1.0.1
-      uc.micro: 1.0.6
 
   markdown-table@3.0.4: {}
 
@@ -2114,8 +2059,6 @@ snapshots:
   mdast-util-to-string@3.2.0:
     dependencies:
       '@types/mdast': 3.0.15
-
-  mdurl@1.0.1: {}
 
   mensch@0.3.4: {}
 
@@ -2382,8 +2325,6 @@ snapshots:
     dependencies:
       regex: 4.3.3
 
-  pangu@4.0.7: {}
-
   parse-entities@4.0.1:
     dependencies:
       '@types/unist': 2.0.11
@@ -2536,8 +2477,6 @@ snapshots:
       wicked-good-xpath: 1.3.0
       xmldom-sre: 0.1.31
 
-  sprintf-js@1.0.3: {}
-
   stringify-entities@4.0.4:
     dependencies:
       character-entities-html4: 2.1.0
@@ -2556,8 +2495,6 @@ snapshots:
   trough@2.2.0: {}
 
   tslib@2.8.0: {}
-
-  uc.micro@1.0.6: {}
 
   unified@10.1.2:
     dependencies:

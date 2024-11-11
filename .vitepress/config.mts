@@ -1,5 +1,4 @@
 import { defineConfig } from 'vitepress'
-import PanguPlugin from 'markdown-it-pangu'
 
 export default defineConfig({
   lang: 'zh-CN',
@@ -17,10 +16,7 @@ export default defineConfig({
       infoLabel: '信息',
       detailsLabel: '详细信息'
     },
-    math: true,
-    config: (md) => {
-      md.use(PanguPlugin)
-    }
+    math: true
   },
   head: [
     [
