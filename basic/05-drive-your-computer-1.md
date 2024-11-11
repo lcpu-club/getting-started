@@ -740,7 +740,7 @@ alias c++='c++-14'
   - `uBlock Origin`: 高效的广告拦截器，Firefox 上运行效果比 Google Chrome 好些，Google Chrome 正在推行 Manifest V3 标准，uBlock Origin 可能在未来无法在 Chrome 浏览器上使用。
 - `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
-- `Ventory`: 多系统启动盘制作工具，在只有一个 U 盘的情况下想要安装多个系统就可以使用。下载：https://www.ventoy.net/cn/download.html
+- `Ventoy`: 多系统启动盘制作工具，在只有一个 U 盘的情况下想要安装多个系统就可以使用。下载：https://www.ventoy.net/cn/download.html
 - `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 Mac 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
 - `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
