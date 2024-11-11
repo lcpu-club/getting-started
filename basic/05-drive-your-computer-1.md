@@ -22,7 +22,7 @@
 
 近些年，基本的编程技能成为各个大学的必修课。在繁多的编程语言中，C、C++、Python 这三门语言是北京大学的基础编程课中涉及较多的三门。然而，对初学者而言，如何让代码“跑起来”是一道不小的难题——写下第一个"Hello World"，却花费数个小时查阅资料、配好环境、让它运行，确实是一件较费心力的事。因此，我们希望提供一套简单易操作的流程，帮助大家配置好用、舒心的编程环境。
 
-我们在此假设 Linux 使用者已经有相关基础，因此主要提供 Windows 与 MacOS 的配置流程。在后续的文档中，我们将为 Linux 系统的使用作更加详尽的介绍。
+我们在此假设 Linux 使用者已经有相关基础，因此主要提供 Windows 与 macOS 的配置流程。在后续的文档中，我们将为 Linux 系统的使用作更加详尽的介绍。
 
 ## 1.0 程序编写的过程
 
@@ -60,7 +60,7 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套 Windows 下的 C/C++编
 
 根据实际测试，学校相关课程的自动测评中使用 GCC 编译器，且默认使用 C++17 标准。学校机房内 IDE 环境提供的是 Visual Studio，部分机房也提供 VS Code，但是可能需要自行配置。因此，我们推荐使用 GCC 编译器，并且在编译时指定 C++17 标准，同时注意一些关于 Visual Studio 的特例。
 
-由于不同编译器的实现略有区别，且头文件不同（例如 GCC 下部分函数须引用 algorithm 头文件，而 MSVC 下无需），因此，本文档推荐在 Windows 下使用 MinGW，在 MacOS 下使用 brew 来配置 GCC 编译环境。
+由于不同编译器的实现略有区别，且头文件不同（例如 GCC 下部分函数须引用 algorithm 头文件，而 MSVC 下无需），因此，本文档推荐在 Windows 下使用 MinGW，在 macOS 下使用 brew 来配置 GCC 编译环境。
 
 ::: warning 注意
 可能有同学知道 GCC 中有头文件 `<bits/stdc++.h>`，但是我们不推荐使用。这样做会引入所有的标准库，增加编译时间，降低编译效率。且 MSVC 并不含有此头文件，这样做会使得代码不可移植，因此这个头文件只适合做题时使用。**但是你上大学又不是来做题的**。
@@ -154,19 +154,19 @@ MSVC（Microsoft Visual C/C++）是微软开发的一套 Windows 下的 C/C++编
 
 ![Run](/assets/basic/05-drive-your-computer-1/Run.png)
 
-### 1.1.3 MacOS 环境配置——以 M 系列芯片为例
+### 1.1.3 macOS 环境配置——以 M 系列芯片为例
 
-MacOS 的基本配置与上述流程类似，区别在于 GCC 的安装方法。我们推荐 MacOS 用户使用 brew 来做环境管理。
+macOS 的基本配置与上述流程类似，区别在于 GCC 的安装方法。我们推荐 macOS 用户使用 brew 来做环境管理。
 
 #### 什么是 brew?
 
-brew 全称 Homebrew，是 MacOS 上一个免费的开源软件包管理器。它简化了 MacOS 用户安装软件的过程。
+brew 全称 Homebrew，是 macOS 上一个免费的开源软件包管理器。它简化了 macOS 用户安装软件的过程。
 
 #### 安装 brew
 
 打开终端，执行如下命令。这里我们使用清华大学镜像站的 brew 源。
 
-```sh
+```shell
 export HOMEBREW_BREW_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/brew.git"
 export HOMEBREW_CORE_GIT_REMOTE="https://mirrors.tuna.tsinghua.edu.cn/git/homebrew/homebrew-core.git"
 export HOMEBREW_INSTALL_FROM_API=1
@@ -189,7 +189,7 @@ M1 及以后芯片的 MacBook 上，brew 安装目录是 `/opt/Homebrew`，在�
 
 安装完成后**重启终端**，通过在终端输入 `brew -v`，可以查看 homebrew 版本。如果正确输出版本信息，表示成功安装。实际使用时，使用 brew 指令即可。
 
-推荐参考[基本开发环境配置（终端与 brew）](https://macguide.leavelet.io/Advanced/developmentEnvFromScratch.html)，完整配置 MacOS 的开发环境。
+推荐参考[基本开发环境配置（终端与 brew）](https://macguide.leavelet.io/Advanced/developmentEnvFromScratch.html)，完整配置 macOS 的开发环境。
 
 #### brew 的基本使用以及 GCC 的安装方法
 
@@ -223,16 +223,16 @@ Installed
 然后，再设置需要的 C/C++ 语法检查标准即可。
 
 ::: info 提示
-与 Windows 不同，这里的 g++-14 就是 MacOS 上 g++编译器的**可执行文件**，它没有 `.exe` 后缀，且命名不同。
+与 Windows 不同，这里的 g++-14 就是 macOS 上 g++编译器的**可执行文件**，它没有 `.exe` 后缀，且命名不同。
 :::
 
-#### 在 MacOS 上运行 C++ 程序
+#### 在 macOS 上运行 C++ 程序
 
 这一部分大体上也与 Windows 类似：直接在 VS Code 打开终端，编译，然后执行。区别在于：
 
 - g++编译器产生的可执行文件以 `.out` 结尾，例如 `a.out`。
 
-- Mac 上不要直接使用 `g++` 命令。
+- macOS 上不要直接使用 `g++` 命令。
 
 ::: warning 注意
 请特别注意**第二点**，这是因为，MacOS 上的 Apple Clang 编译器在环境中注册了 `g++/gcc` 这两个命令。实际上，它们都指向 Apple Clang 编译器，与 `clang` 命令**完全一致**。因此，如果直接输入 `g++`，实际调用的是 Apple Clang 来编译，而不是我们安装的 GCC。
@@ -293,7 +293,7 @@ custom_channels:
 ![activate](/assets/basic/05-drive-your-computer-1/activate.png)
 
 ::: info 提示
-windows 下安装 `conda` 后第一次使用虚拟环境时，要先输入 `mamba init`。弹出授权窗口，选是，然后**关闭终端重新打开**。
+Windows 下安装 `conda` 后第一次使用虚拟环境时，要先输入 `mamba init`。弹出授权窗口，选是，然后**关闭终端重新打开**。
 :::
 
 - `mamba deactivate`：退出虚拟环境。如 `conda deactivate test`，会**完全退出**conda，此后终端使用系统环境。直接输入 `conda deactivate` 会切换到 `base` 环境。
@@ -359,9 +359,9 @@ Set-ExecutionPolicy PolicyYouWant
 
 具体的配置和美化过程较复杂，且需求因人而异。读者可以在网上查找相关资料来定制自己的终端。例如，可以查阅如下网站：https://zhuanlan.zhihu.com/p/352882990
 
-### <span id="TerminalEnvironmentConfiguration">1.3.2</span> MacOS 终端配置与美化
+### <span id="TerminalEnvironmentConfiguration">1.3.2</span> macOS 终端配置与美化
 
-MacOS 终端提供了几种不同的 shell，比如 bash 和 zsh。修改这些 shell 的配置文件时，无需像 Windows 一样更改脚本执行策略。如果要修改 zsh 的配置文件，可以用文本编辑器打开它。例如，用 VS Code 打开：在 VS Code 内，按 Ctrl+\` 打开终端，然后输入 `code ~/.zshrc`。
+macOS 终端提供了几种不同的 shell，比如 bash 和 zsh。修改这些 shell 的配置文件时，无需像 Windows 一样更改脚本执行策略。如果要修改 zsh 的配置文件，可以用文本编辑器打开它。例如，用 VS Code 打开：在 VS Code 内，按 Ctrl+\` 打开终端，然后输入 `code ~/.zshrc`。
 
 ::: warning 注意
 没有打开 VS Code 的情况下，直接在系统终端输入如上命令可能发生同样的情况（显示未保存的空文件，此时如果保存，那么配置文件会变为空文件）。
@@ -409,7 +409,7 @@ alias c++='c++-14'
 
 还有一些指令非常好用：
 
-- `./a.out < in > out`：在 Linux 和 MacOS 中，此指令可以从 `in` 读取输入，传递给程序 `a.out` 作为输入，然后把输出传到文件 `out` 中。这在做一些题目时非常有效，尤其是<u>程序设计实习的魔兽世界大作业</u>这类输出以 MB 来计数的题目。
+- `./a.out < in > out`：在 Linux 和 macOS 中，此指令可以从 `in` 读取输入，传递给程序 `a.out` 作为输入，然后把输出传到文件 `out` 中。这在做一些题目时非常有效，尤其是<u>程序设计实习的魔兽世界大作业</u>这类输出以 MB 来计数的题目。
 
   ::: warning 注意
   这会删除 out 文件中原本的内容。
@@ -457,7 +457,7 @@ alias c++='c++-14'
 
 - **图片**：`.jpg/.jpeg`、`.png`、`.gif`、`.bmp`、`.webp`、`.svg` 等。
 
-- **压缩文件**：`.zip`、`.rar`、`.7z` 等。常用于 Linux 系统的有：`.tar.gz`、`.tar.xz`。常用于 MacOS 系统的有：`.dmg`（用于分发软件）。用于光盘，或虚拟光盘的为：`.iso`，可用来存放系统镜像。
+- **压缩文件**：`.zip`、`.rar`、`.7z` 等。常用于 Linux 系统的有：`.tar.gz`、`.tar.xz`。常用于 macOS 系统的有：`.dmg`（用于分发软件）。用于光盘，或虚拟光盘的为：`.iso`，可用来存放系统镜像。
 
 - **可执行文件**：Windows：`.exe`；Linux/Unix：无；MacOS：无，或 `.app`；Java 程序：`.jar`
 
@@ -544,12 +544,12 @@ alias c++='c++-14'
 
 在 Windows 上，要创建一份文件，可以在右键菜单中选择创建文本文档，然后根据需要修改名称和后缀。
 
-在 MacOS 上，系统没有直接在右键菜单中提供类似的选项。可以用下面几种方式：
+在 macOS 上，系统没有直接在右键菜单中提供类似的选项。可以用下面几种方式：
 
 - **利用软件**：打开 VS Code 等软件，在相应目录右键，点击新建文件
 - **利用终端**：打开终端，定位到需要创建文件的目录，输入命令 `touch filename`，创建名为 filename 的文件。
 
-在 Linux/MacOS 中，第二种方法比较常见。
+在 Linux/macOS 中，第二种方法比较常见。
 
 # 3. 软件的安装和卸载
 
@@ -609,7 +609,7 @@ alias c++='c++-14'
 
 安装完成后，强烈建议**查看整个界面**，是否有捆绑软件勾选，再点击完成。
 
-对于 MacOS 电脑，情况有所不同。一般来说，下载到的是 `.dmg` 文件。双击运行，把软件图标拖到 Application 文件夹即可安装。安装完成后，会发现 Apps 中出现这个软件。但有时候，打开软件会提示 App 已损坏。这是 Apple 的过强的安全策略造成的。
+对于 macOS 电脑，情况有所不同。一般来说，下载到的是 `.dmg` 文件。双击运行，把软件图标拖到 Application 文件夹即可安装。安装完成后，会发现 Apps 中出现这个软件。但有时候，打开软件会提示 App 已损坏。这是 Apple 的过强的安全策略造成的。
 
 由于篇幅限制，请针对每个软件出现的问题，搜索相应的解决办法（因为每个软件的包名不同）。下面给出两个网站，介绍了相关问题的通用解决办法：
 
@@ -635,7 +635,7 @@ alias c++='c++-14'
 
 点击后，搜索你要卸载的软件，然后点卸载。
 
-### MacOS
+### macOS
 
 在 MacBook 上删除软件比 Windows 复杂得多。虽然，在访达->Application 文件夹，把软件移到废纸篓，或者在启动台长按，点×删除，可以删除软件主体；**但是**，这样做并不能删除软件在系统各处创建的配置文件等等琐碎的小文件，也就是**软件残留**。
 
@@ -700,7 +700,7 @@ alias c++='c++-14'
   - `Internet Download Manager`：功能强大的一款下载器。同网络环境下，相比于浏览器自带下载功能，提速明显，且可以从网页中下载视频、图片。但是收费。
 - MacOS：
   - `Free Download Manager`：官网 [Free Download Manager for Mac | Download](https://www.freedownloadmanager.org/zh/download-fdm-for-mac.htm)
-    `Aria2`是一款不错的下载器。多个平台都有，但是使用门槛较高。官网：[GitHub - aria2/aria2](https://github.com/aria2/aria2)
+  - `Aria2` 是一款不错的下载器。多个平台都有，但是使用门槛较高。官网：[GitHub - aria2/aria2](https://github.com/aria2/aria2)
 
 ## 4.4 杀毒软件推荐
 
@@ -737,7 +737,7 @@ alias c++='c++-14'
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
 - `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
-- `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 Mac 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
+- `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 macOS 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
 - `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 - `Geek`：Windows 上的一款卸载软件，可以卸载各个软件的残留。官网：[Geek Uninstaller - the best FREE uninstaller](https://geekuninstaller.com/)
@@ -746,7 +746,7 @@ alias c++='c++-14'
 - `FileConverter`：可以在很多文件格式间互转。官网：https://github.com/Tichau/FileConverter
 - `Calibre`：电子书管理器，也可以支持电子书格式转换。官网：https://calibre-ebook.com/zh_CN
 - `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
-- [convertio](https://convertio.co)：也用于文件转换，是一个网站。
+- `convertio`：也用于文件转换，是一个[网站](https://convertio.co)。
 - `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。Linux 上的替代品为 baobab。
 - `WallpaperEngine`：可以找到 Steam 创意工坊上的很多壁纸。建议从 Steam 购买并下载。
 - `WinSCP`: Windows FTP/SFTP 图形客户端，官网：https://winscp.net/
