@@ -692,9 +692,9 @@ alias c++='c++-14'
 - 所有平台：
   - `VLC`：一款开源播放器。官网：[官方下载：VLC media player，最棒的开源播放器 - VideoLAN](https://www.videolan.org/vlc/index.zh_CN.html)
 - Windows：
-  - `mpv`: 一款开源播放器，需要用户自己配置。官网: https://mpv.io/
-    - 配置可参考 [mpv - ArchWiki](https://wiki.archlinux.org/title/Mpv) 和 [mpv播放器的使用引导](https://hooke007.github.io/unofficial/mpv_start.html)
   - `Potplayer`：一款老牌的播放器，功能强大。官网：https://potplayer.tv/?lang=zh_CN
+  - `mpv`: 一款开源播放器，需要用户自己配置。官网: https://mpv.io/
+    - 配置可参考 [mpv - ArchWiki](https://wiki.archlinux.org/title/Mpv) 和 [mpv 播放器的使用引导](https://hooke007.github.io/unofficial/mpv_start.html)
 - MacOS：
   - `IINA`：VLC 的重新封装，界面美观
 
