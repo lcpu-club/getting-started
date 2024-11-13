@@ -115,6 +115,7 @@ Windows 下打开任务管理器检查有无不必要启动项，加以禁止即
   如果你有 Windows 的使用经历，那么大部分情况下，你可以将 macOS 下的 `Option` 键视为 Windows 下的 `Alt` 键，将 Command 键视为 Windows 下的 `Ctrl` 键。
 
   下面是一些常用的 macOS 快捷键：
+
   - `Command+C`: 复制（或者用 Apple 一向的逻辑：拷贝）
   - `Command+V`: 粘贴
   - `Command+X`: 剪切
@@ -135,12 +136,14 @@ Windows 下打开任务管理器检查有无不必要启动项，加以禁止即
 
   ::: tip
   事实上，上述快捷键不一定是绝对的，例如:
+
   - 在多标签页的程序（VS Code、浏览器等）中，`Command+W` 用于关闭当前标签页，当没有标签页可以关闭时，关闭窗口。
   - 一般情况下，撤销对应的快捷键是 `Command+Shift+Z`，但是在某些第三方程序，例如 Microsoft Word 中，`Command+Z` 也可以用于撤销。
   - 访达下，`Command+C` 表示把文件复制复制（Copy，拷贝）到剪贴板，而 `Command+D` 表示在当前位置创建副本（Duplicate，复制）。至于 `Command+X`，在选择文件的情况下你不能使用这个快捷键，换句话说：你没法剪切一个文件。
   - 访达下还有一个特殊的快捷键 `Command+Shift+G`，用于快速定位到你指定的文件夹 ~~（对自己敲路径的手速有自信的话，快来试试吧）~~。
   - 多提一嘴：在 Mac 的原装键盘上你可能找不到 `Del` 键，事实上，那个像是退格键的按键被 Apple 称之为 `Delete`。如果你想要删除后边的一个字符用 `Fn+Delete`，删除文件时用 `Command+Backspace`，删除一个对象？随缘吧，可能是 `Delete` 键本身，也可能根本没有快捷键。
   - 你可以在 [Apple 支持](https://support.apple.com/zh-cn/102650) 找到更完整的快捷键参考列表，也可以在顶端菜单栏找到当前应用的快捷键。
+
   :::
 
 #### Shell 快捷键 {#shell-shortcut}
