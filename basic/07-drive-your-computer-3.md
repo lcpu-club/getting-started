@@ -131,7 +131,7 @@ Windows 下打开任务管理器检查有无不必要启动项，加以禁止即
   - `Command+W`: 关闭当前窗口
   - `Command+M`: 最小化当前窗口
   - `Command+Space`: 打开聚焦搜索
-  - `Option-Command-Esc`: 打开 `强制退出应用程序` 窗口，类似于任务管理器
+  - `Option-Command-Esc`: 打开 `强制退出应用程序` 窗口，类似于 Windows 下的任务管理器
   - `Control+左右方向键`: 切换虚拟桌面
 
   一些地方也可能会使用图标表示相应的修饰键，例如：
