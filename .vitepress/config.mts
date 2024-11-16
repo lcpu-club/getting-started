@@ -84,7 +84,7 @@ export default defineConfig({
     socialLinks: [{ icon: 'github', link: 'https://github.com/lcpu-club' }],
     footer: {
       message: '由北京大学学生 Linux 俱乐部所著',
-      copyright: '© 2024 LCPU Club, licensed under CC BY-SA 4.0'
+      copyright: '© 2024 LCPU Club, licensed under CC BY-NC-SA 4.0'
     },
     docFooter: {
       prev: '上一节',
