@@ -91,7 +91,7 @@ Intel 常年为 x86 的丑陋感到自卑。有一天在 HP 的“蛊惑”，�
 
 ![HDD](/assets/basic/03-computer-basic-knowledge-1/Laptop-hard-drive-exposed.jpg)
 图 6. 机械硬盘内部结构。图源自 wiki，获 CC BY-SA 授权
-![SDD](/assets/basic/03-computer-basic-knowledge-1/SSD.jpg)
+![SSD](/assets/basic/03-computer-basic-knowledge-1/SSD.jpg)
 图 7. 固态硬盘内部结构。左 SandForce 标志芯片为主控，负责与主机通讯以及管理和读写右侧 6 颗闪存颗粒内的数据。图源自 wiki，获 CC BY-SA 授权
 
 ::: warning 注意
@@ -109,12 +109,12 @@ Intel 常年为 x86 的丑陋感到自卑。有一天在 HP 的“蛊惑”，�
 
 #### 常见存储设备对比
 
-| 种类   | 单盘最大容量 | 密度 | 容量/价格 | 单盘带宽 | 延迟    | 可靠性 | 维护成本 |
-| ------ | ------------ | ---- | --------- | -------- | ------- | ------ | -------- |
-| HDD    | 24TB         | 中   | 8GB/RMB   | 300MB/s  | 50us    | 高     | 低       |
-| SDD    | 60TB         | 极高 | 2GB/RMB   | 6000MB/s | 10ms    | 中     | 低       |
-| Bluray | 100G         | 低   | 5.5GB/RMB | 35MB/s   | 100ms   | 很高   | 中       |
-| Tape   | 18TB         | 极高 | 45GB/RMB  | 750MB/s  | loooong | 很高   | 极高     |
+| 种类    | 单盘最大容量 | 密度 | 容量/价格  | 单盘带宽  | 延迟    | 可靠性 | 维护成本 |
+| ------- | ------------ | ---- | ---------- | --------- | ------- | ------ | -------- |
+| HDD     | 24 TB        | 中   | 8 GB/RMB   | 300 MB/s  | 10 ms   | 高     | 低       |
+| SSD     | 60 TB        | 极高 | 2 GB/RMB   | 6000 MB/s | 50 μs   | 中     | 低       |
+| Blu-ray | 100 GB       | 低   | 5.5 GB/RMB | 35 MB/s   | 100 ms  | 很高   | 中       |
+| Tape    | 18 TB        | 极高 | 45 GB/RMB  | 750 MB/s  | loooong | 很高   | 极高     |
 
 #### 存储层次结构
 
