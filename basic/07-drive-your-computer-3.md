@@ -136,12 +136,12 @@ Windows 下打开任务管理器检查有无不必要启动项，加以禁止即
 
   一些地方也可能会使用图标表示相应的修饰键，例如：
 
-  |    修饰键    |        图标        |
-  |-------------|:-----------------:|
-  |   Command   |<MacOSCommandKey />|
-  |   Option    |<MacOSOptionKey /> |
-  |    Shift    | <MacOSShiftKey /> |
-  |   Control   |<MacOSControlKey />|
+  | 修饰键  |        图标         |
+  | ------- | :-----------------: |
+  | Command | <MacOSCommandKey /> |
+  | Option  | <MacOSOptionKey />  |
+  | Shift   |  <MacOSShiftKey />  |
+  | Control | <MacOSControlKey /> |
 
   ::: tip
   事实上，上述快捷键不一定是绝对的，例如:
