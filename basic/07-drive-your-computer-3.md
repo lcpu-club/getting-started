@@ -134,6 +134,15 @@ Windows 下打开任务管理器检查有无不必要启动项，加以禁止即
   - `Option-Command-Esc`: 打开 `强制退出应用程序` 窗口，类似于任务管理器
   - `Control+左右方向键`: 切换虚拟桌面
 
+  一些地方也可能会使用图标表示相应的修饰键，例如：
+
+  |    修饰键    |        图标        |
+  |-------------|:-----------------:|
+  |   Command   |<MacOSCommandKey />|
+  |   Option    |<MacOSOptionKey /> |
+  |    Shift    | <MacOSShiftKey /> |
+  |   Control   |<MacOSControlKey />|
+
   ::: tip
   事实上，上述快捷键不一定是绝对的，例如:
 
@@ -173,3 +182,10 @@ Windows 下打开任务管理器检查有无不必要启动项，加以禁止即
 
 不过这也带来了一些好处，例如：代表复制的 `Command+C` 在终端下不会与 `Control+C` 冲突，无需担心复制的时候一不小心把程序给终止了。
 :::
+
+<script setup>
+import MacOSCommandKey from "../components/MacOSCommandKey.vue"
+import MacOSOptionKey from "../components/MacOSOptionKey.vue"
+import MacOSShiftKey from "../components/MacOSShiftKey.vue"
+import MacOSControlKey from "../components/MacOSControlKey.vue"
+</script>
