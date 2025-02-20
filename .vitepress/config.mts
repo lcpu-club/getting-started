@@ -67,13 +67,17 @@ export default defineConfig({
               text: '09. 用好你的电脑 V: 操作系统和编程语言',
               link: '/basic/09-drive-your-computer-5'
             },
-            { text: '10. Linux 基础知识：Linux 101', link: '/basic/10-linux-basic-1' },
+            { text: '10. Linux 基础知识: Linux 101', link: '/basic/10-linux-basic-1' },
             { text: '11. Linux 基础知识: 虚拟机安装和常用操作', link: '/basic/11-linux-basic-2' },
             {
               text: '12. 文本编辑: Markdown, LaTeX, Typst 和 Beamer',
               link: '/basic/12-text-editing'
             }
           ]
+        },
+        {
+          text: '进阶：运维方向',
+          items: [{ text: '01. Linux文件系统', link: '/ops/01-linux-fs' }]
         }
       ]
     },
