@@ -69,6 +69,22 @@ graph TB
 - `btrfs`：新一代文件系统，支持快照等高级特性
 - `fat32/ntfs`：主要用于与 Windows 系统交互
 
+#### 不同文件系统的区别
+
+- `ext4`：支持大文件和大分区，具有良好的性能和稳定性，适合大多数场景。
+- `xfs`：在处理大文件和高并发访问时表现优异，适合大容量存储和高性能需求的场景。
+- `btrfs`：支持快照、压缩和子卷等高级特性，适合需要高级数据管理功能的场景。
+- `fat32/ntfs`：主要用于与 Windows 系统交互，`fat32` 适合小容量 U 盘，`ntfs` 适合大容量存储设备。
+
+如果你不知道怎么选择，`xfs` 是一个不错的选择。
+
+#### 选择文件系统的最佳实践
+
+- 对于大多数 Linux 系统，推荐使用 `ext4` 文件系统。
+- 对于需要处理大文件和高并发访问的场景，推荐使用 `xfs` 文件系统。
+- 对于需要高级数据管理功能的场景，推荐使用 `btrfs` 文件系统。
+- 对于需要与 Windows 系统交互的存储设备，推荐使用 `fat32` 或 `ntfs` 文件系统。
+
 ## Linux 的挂载机制
 
 Linux 系统中的所有文件都在一个统一的目录树中，通过挂载将物理设备整合到这个目录树中：
@@ -434,3 +450,141 @@ cat /proc/mdstat
   # 查找并删除超过 30 天的备份
   find /backup -name "*.bak" -mtime +30 -delete
   ```
+
+## 附注
+
+### ext4 的基本操作命令
+
+1. 创建 ext4 文件系统
+
+```bash
+sudo mkfs.ext4 /dev/sdb1
+```
+
+2. 检查和修复 ext4 文件系统
+
+```bash
+sudo fsck.ext4 /dev/sdb1
+```
+
+3. 调整 ext4 文件系统大小
+
+```bash
+sudo resize2fs /dev/sdb1
+```
+
+### xfs 的基本操作命令
+
+1. 创建 xfs 文件系统
+
+```bash
+sudo mkfs.xfs /dev/sdb1
+```
+
+2. 检查和修复 xfs 文件系统
+
+```bash
+sudo xfs_repair /dev/sdb1
+```
+
+3. 增加 xfs 文件系统大小
+
+```bash
+sudo xfs_growfs /mnt/mydisk
+```
+
+注意：`xfs` 文件系统不支持缩小操作。 `xfsprogs 5.12` 增加了对缩小操作的实验性支持，但仍需谨慎使用。
+
+### btrfs 简介
+
+`btrfs` 是一种现代的 Linux 文件系统，支持快照、压缩和子卷等高级特性，适合需要高级数据管理功能的场景。
+
+#### btrfs 子卷
+
+btrfs 子卷（subvolume）是 btrfs 文件系统中的一个逻辑分区，可以独立管理和操作。子卷类似于目录，但具有独立的文件系统属性，可以单独进行快照和备份。
+
+#### btrfs 基本概念与操作命令
+
+1. 创建 btrfs 文件系统
+
+```bash
+sudo mkfs.btrfs /dev/sdb1
+```
+
+2. 创建子卷
+
+```bash
+sudo btrfs subvolume create /mnt/mydisk/subvol
+```
+
+3. 创建快照
+
+```bash
+sudo btrfs subvolume snapshot /mnt/mydisk/subvol /mnt/mydisk/snapshot
+```
+
+4. 检查和修复 btrfs 文件系统
+
+```bash
+sudo btrfs check /dev/sdb1
+```
+
+5. 调整 btrfs 文件系统大小
+
+```bash
+sudo btrfs filesystem resize +10G /mnt/mydisk
+```
+
+### LVM 简介
+
+LVM（Logical Volume Manager，逻辑卷管理器）是一种灵活的磁盘管理工具，可以动态调整磁盘分区大小，方便磁盘空间的管理和扩展。
+
+在部分 Linux 发行版中，安装系统时默认就会配置 LVM。如果你在 `fstab` 中看到 `/dev/mapper` 开头的设备，那么你的系统可能已经使用了 LVM。
+
+#### LVM 的基本概念
+
+1. **物理卷（PV）**：物理硬盘或分区，通过 `pvcreate` 命令创建。
+2. **卷组（VG）**：由一个或多个物理卷组成，通过 `vgcreate` 命令创建。
+3. **逻辑卷（LV）**：从卷组中分配的逻辑存储单元，通过 `lvcreate` 命令创建。
+
+#### LVM 的基本操作命令
+
+1. 创建物理卷
+
+```bash
+sudo pvcreate /dev/sdb1
+```
+
+2. 创建卷组
+
+```bash
+sudo vgcreate myvg /dev/sdb1
+```
+
+3. 创建逻辑卷
+
+```bash
+sudo lvcreate -L 10G -n mylv myvg
+```
+
+4. 创建文件系统
+
+```bash
+sudo mkfs.ext4 /dev/myvg/mylv
+```
+
+5. 挂载逻辑卷
+
+```bash
+sudo mkdir /mnt/mylv
+sudo mount /dev/myvg/mylv /mnt/mylv
+```
+
+6. 扩展逻辑卷
+
+```bash
+sudo lvextend -L +5G /dev/myvg/mylv
+sudo resize2fs /dev/myvg/mylv
+```
+
+LVM 使得磁盘管理更加灵活，特别适合需要频繁调整磁盘空间的场景。
