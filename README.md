@@ -1,3 +1,7 @@
+# 这是 lcpu-club/getting-started 的一个 Fork
+# This is a Fork from lcpu-club/getting-started
+
+
 # 仓库说明
 
 每一讲单独放一个文件，文件命名规则为：系列/编号-名称.md。
