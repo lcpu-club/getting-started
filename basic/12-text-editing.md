@@ -193,17 +193,15 @@ $\LaTeX$ 是一种极为专业的**排版**工具, 而**不是**文本编辑器.
 
 ### 怎样安装 $\LaTeX$ ?
 
-Waiting for Tianqi Zhang's works ... 
+> 我好久好久没装过这玩意了, 等待新装的人写罢
+> 
+> 人话: 咕咕咕 
 
 ### 怎样使用 $\LaTeX$ ?
 
 $\LaTeX$ 功能最强大的一点在于它支持巨量的包与文件类型, 使得它能够适用于大量工作: 短文用 `article`, 长文用 `report`, 书本用 `book`, 信件用 `letter`, 简历用 `moderncv`, 幻灯片用 `beamer`... 遗憾的是, 上述文档类型除了大部分相同的通用语法以外, 还都有着自己独立的宏和语句功能. 如果需要全部精通上述文档类型, 难度不亚于掌握 `C++23` 的所有发行包, 连笔者都不能说自己全部掌握了它们. 因此我将仅仅讲述基本语法, 实用包和几种文档类型. 
 
 ![Latex 1: 文章](../assets/basic/12-text-editing/latex1.png)
-
-![Latex 2: 简历](../assets/basic/12-text-editing/latex2.png)
-
-![Latex 3: 幻灯片](../assets/basic/12-text-editing/latex3.png)
 
 ### 基本语法
 
@@ -397,3 +395,178 @@ $$
 
 这个包还有一些其他的写法, 例如 `subnumcases`, 尚待读者主动探索. 
 
+### `beamer` 简述: 令人头秃 (主观) 的演示文稿
+
+`beamer` 可以称得上是 $\LaTeX$ 除了 `article` 以外最重要的包了. 它能够通过非图形界面来编写一种风格非常鲜明 ~~令人头秃~~ 的演示文稿, 许多教授 (尤其是理工科院系) 非常喜欢这个包; 这是因为它能够极为完美地兼容 $\LaTeX$ 中的大部分包, 使得插入代码和公式非常简单易懂 (点名批评PowerPoint). 
+
+不过由于这个包的理工味道实在是过于浓重, 对于文史类的 `Pre` ~~(为什么大伙都在卷PPT的精美程度啊)~~ 来说并不适用. 因此在何种情况下使用这个包, 需要同学们自己衡量.
+
+#### `beamer` 基本语法
+
+对于一个 `beamer` 而言, 它有一个最基本的组成单位 "帧", 指的是一张幻灯片, 宏名为 `frame`. 
+
+下面是一个非常简单的 `beamer` 实例:
+
+```latex
+\documentclass{beamer}
+\usepackage[UTF8]{ctex}
+\title{如何科学摸鱼}
+\author{某位学长}
+
+\begin{document}
+\begin{frame}
+    \frametitle{能量守恒定律}
+    摸鱼时长 $\propto$ 课程难度 $\times$ 截止日期焦虑^{-1}
+\end{frame}
+\end{document}
+```
+
+对于唯一的帧而言, 编出来的是这样的:
+
+![Beamer实例](../assets/basic/12-text-editing/latex4.png)
+
+你可能会问: 标题哪去了?
+
+别急, 标题在下面:
+
+#### `beamer` 的特殊页语法
+
+`beamer` 的特殊页有 2 个: 标题页和目录页. 使用方法非常简单:
+
+```latex
+\begin{frame}
+    \titlepage % 我是标题页, 该页基于\title结构自动生成
+\end{frame}
+
+\begin{frame}
+    \contentsname   % 我是目录名称, 也可以缺省后面的内容
+    \tableofcontents   % 我是目录页, 这也是根据文档的\section结构自动生成的
+\end{frame}
+```
+
+值得注意的是, `beamer` 的目录页依赖于文档的固有 `\section` 结构. 如果没有上述结构, 那么目录页反而会留空. 
+
+#### `beamer` 的主题与配色
+
+Beamer 提供了多种主题和颜色主题，可以通过 \usetheme 和 \usecolortheme 命令来设置. 
+
+[这里](https://latex-beamer.com/tutorials/beamer-themes/)是beamer官方的主题集合~~也是最令人头秃的一批~~. 当然, 你可以使用其他的主题; 关于主题的下载, 这里暂不介绍. ~~(人话: 咕了)~~
+
+#### `beamer` 的强调块
+
+`beamer` 内置了三种强调块: 蓝块 `\block`, 红块 `\alertblock`, 以及绿块 `\exampleblock`. 使用方式不用我再啰嗦了, 下面是一个实例: (使用的主题是 `Berlin`, 配色为 `default`; 如果有不同的配色, 则可能会有所不同)
+
+```latex
+\begin{frame}
+
+    \begin{block}{这是蓝块}
+        咕
+    \end{block}
+
+    \begin{alertblock}{这是红块}
+        咕咕
+    \end{alertblock}
+
+    \begin{exampleblock}{这是绿块}
+        咕咕咕
+    \end{exampleblock}
+
+\end{frame}
+```
+
+![Beamer实例2](../assets/basic/12-text-editing/latex5.png)
+
+以上是 Beamer 的一些最最基本的用法. 不过通过这些语法, 就可以创建出结构清晰、内容丰富的演示文稿了; 当然, Beamer 的功能远不止这些, 还有许多例如动画等的高级功能等待你去探索.
+
+### `report` 简述: 超超超长文的处理利器
+
+如果说 article 是 $\LaTeX$ 界的瑞士军刀, 那么 report 就是自带章节暴击的屠龙宝刀: 专门用来对付课程论文/实验报告等需要疯狂堆字数的超超超长文 (比如某门课要求你写30页的**小型**综述时，懂的都懂🙃)。
+
+它的核心优势在于分章节如呼吸般自然，内置 \chapter{} 直接生成超大号标题，搭配自动目录 (\tableofcontents) 和分页控制，轻松实现从「草稿像蚯蚓」到「排版像艺术品」的阶级跃迁 (当然，前提是你能肝完)。
+
+#### 基础操作：从入门到摆烂
+
+```latex
+\documentclass{report}  
+\usepackage[UTF8]{ctex}
+\title{关于熬夜是否影响发量的研究}  
+\author{一位秃然的学者}  
+
+\begin{document}  
+\maketitle  % 生成标题页（比beamer的\frame{\titlepage}更简单！）  
+\tableofcontents  % 自动生成目录（建议写完全文再生成，否则目录可能比脸还干净）  
+
+\chapter{深夜作死原理}  
+\section{咖啡因代谢动力学}  
+凌晨2点的大脑：  
+\begin{equation}  
+\text{效率} = \frac{\text{咖啡摄入量}}{\text{ddl剩余时间}} + \epsilon_{\text{玄学}}  
+\end{equation}  
+
+\chapter{实验数据}  
+% 此处应有100个表格和50张图，但作者已躺平  
+\end{document}  
+```
+
+编出来以后大概是这样的:
+
+![report](../assets/basic/12-text-editing/latex6.png)
+
+**特别提醒**: 写 report 时请远离 Ctrl+S 成瘾症: 因为文章超长, 每次保存后重新编译的时间足够你思考人生三遍。这边建议关掉自动编译, 写完以后一口气编完, 把等待时间用来补觉~~或植发~~。
+
+**特别提醒2**: 用 `\tableofcontents` 自动生成目录后，可用 `tocloft` 包调整行距/缩进，防止目录页比正文还长 ~~(被暴打力)(悲)~~
+
+什么, 你想让我写怎么用 `tocloft` 包?  (╯‵□′)╯︵┻━┻  
+
+> 有时间会写的, 不过现在暂时还是咕了罢
+
+### `moderncv` 简述: 不用排版的简历? 还有这等好事?
+
+`moderncv` 是简历界的一股清流: 它号称能让你彻底摆脱 Word 里对齐线、字号和页边距的噩梦，用 $\LaTeX$ 自动生成排版工整的简历。对于那些曾被“一页纸简历”“如何优雅地写‘精通Office’”折磨到失眠的同学来说，简直是救星 (前提是你愿意花10分钟学代码语法)。
+
+不过要注意，此包自带一股“性冷淡极简风”，如果你梦想设计出五彩斑斓的黑/赛博朋克特效简历，建议直接转行当UI设计师 (或者去某宝花5块钱买个模板)。
+
+只需声明文档类型为 moderncv，就能召唤出标准简历框架。以下代码足以让HR/导师眼前一亮 (也可能眼前一黑)：
+
+```latex
+\documentclass{moderncv}
+\usepackage[UTF8]{ctex}
+
+\moderncvtheme[blue]{casual}        % 主题选casual，颜色选忧郁蓝
+\name{王小明}{摸鱼学硕士}            % 名字和头衔分开写，防止过于嚣张
+\email{run@fast.com}                % 建议别用“ilovexxx@qq.com”
+\social[github]{github.com/xxx}     % 虽然你仓库里可能到头来只有HelloWorld
+\social[linkedin]{xxx}              % 假装有国际化人脉, 不过谁用领英啊 (大嘘)
+\quote{Stay hungry, stay foolish}   % 乔布斯名言，HR已免疫
+
+\begin{document}
+\maketitle  % 生成个人信息区块
+
+\section{教育背景}
+\cventry{2021--2025}{专业：理论与实操}{如何科学划水大学}{寄点3.7/5.0}{}{核心课程：《咖啡因代谢学》《早八生存指南》}
+
+\section{实习经历}
+\cventry{2023.06--2023.09}{首席工位守护者}{某厂}{}{}{主要成就：带薪拉屎时长部门TOP1}
+\end{document}
+```
+
+编出来以后大概是这样的: 
+![?](../assets/basic/12-text-editing/latex7.png)
+
+⚠️**警告**：此包可能导致副作用——当发现同学还在用Word调段落间距时，会忍不住露出怜悯微笑 (然后被揍)
+
+该包的一个极为良好的特性是, 自动压缩空白区域, 可以有效地避免“半页纸尴尬”. 但是与其这样, 真不如多整点活填满这页纸吧 (大嘘) .
+
+~~所以欢迎来LCPU玩~~
+
+## Typst
+
+> 这玩意我也不会, 就咕咕咕了吧
+>
+> 此处能者居之
+
+## 结语
+
+由于本人的整活特性, 越到后来的且可能用不上的内容写得便越发抽象起来了. 不过我觉得这种求生指南 Blog 肯定是相对轻松一些更好: 这只是一个引导性质的内容, 更加进阶的内容肯定需要同学们自己去探索学习. ~~毕竟在你北上课可能是获取知识的最差手段之一了~~. 
+
+这边建议同学们先用这12篇博文的知识, 从日常作业开始慢慢上手, 再自行查找资料进阶与熟练: 至少技多不压身, 在未来写毕业论文或者课程论文的时候不必焦头烂额地现学了. 毕竟ddl是无止境的, 而头发是有限的; 两者相比, 看起来还是头发更重要哦(￣▽￣)~*
