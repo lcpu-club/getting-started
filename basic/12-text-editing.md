@@ -337,3 +337,63 @@ $$\sum_{i=0}^{10}$$
 #### `ctex`
 
 伟大无需多言的中文支持, 使用方法刚刚已经举例过了. 
+
+#### `AMS` 系列
+
+美国数学会出品的一系列宏包. 学会根据其印刷和电子出版物以及在线资料库的样式要求, 编写了一组用于排版数学出版物的宏包套件. 我们在这个系列中最经常使用的包有下列三个:
+
+- `amssymb` 提供符号;
+- `amsfonts` 提供字体; 
+- `amsmath` 提供算符.
+
+直接使用 `usepackage` 命令引用即可. 
+
+#### `geometry` 
+
+这是一个完全负责版式的宏包, 比 $\LaTeX$ 自带的版式配置要好用得多. 
+
+```latex
+\usepackage{geometry}
+\geometry{a4paper, margin=1in} % A4纸张, 页边距1英寸
+```
+
+#### `graphicx`
+
+这是一个专门负责图片的宏包. 具体使用较为复杂, 参见 [Overleaf官方网站: 插入图片](https://www.overleaf.com/learn/latex/Inserting_Images). 
+
+在使用这个宏包的时候, 建议把图片全部放到同一个位置, 以便于整理.
+
+#### `listings`
+
+这是一个专门负责代码的宏包. 具体使用较为复杂, 参见 [Overleaf官方网站: 列出代码](https://www.overleaf.com/learn/latex/Code_listing). 
+
+上述官方网站列出了一个叫 `verbatim` 的宏包, 但是它过于~~香草味~~原始, 我个人非常不喜欢这个宏包, 不建议使用它来展示代码. 不过 `verbatim` 非常适合在 $\LaTeX$ 中教学 $\LaTeX$, 这是因为这个结构内的所有内容都会被**直接打印**.
+
+#### `algorithm2e`
+
+这是一个专门负责伪代码的宏包, 在算法伪码上的表现比 `listings` 要好得多. 使用也较为复杂, 参见 [Overleaf官方网站: 算法](https://www.overleaf.com/learn/latex/Algorithms)
+
+#### `cases`
+
+这是一个负责分段函数等的宏包, 在分段函数和方程组上的表现比 `align` 要好得多. 不过有时候 `usepackage` 不需要单独列出这个宏包, 但是有时候不列出来就会出错. 下面的例子是直接从 Overleaf 上节选的, 这里就没有列出. 
+
+```latex
+\documentclass{article}
+\usepackage{amsmath}
+
+\begin{document}
+\maketitle
+
+$$
+1+(-1)^n=
+\begin{cases}
+	0, & \text{if $n$ odd}\\
+    2, & \text{otherwise}
+\end{cases}
+$$
+
+\end{document}
+```
+
+这个包还有一些其他的写法, 例如 `subnumcases`, 尚待读者主动探索. 
+
