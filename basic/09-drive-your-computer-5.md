@@ -75,7 +75,7 @@ int mian()
 
 以下是笔者电脑上给出的报错信息：
 
-```arduino
+```shell
 > g++ example.cpp -o example.exe
 D:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/bin/ld.exe: D:/msys64/ucrt64/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../lib/libmingw32.a(lib64_libmingw32_a-crtexewin.o): in function `main':
 C:/M/B/src/mingw-w64/mingw-w64-crt/crt/crtexewin.c:70: undefined reference to `WinMain'
