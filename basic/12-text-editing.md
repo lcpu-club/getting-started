@@ -374,7 +374,7 @@ $$\sum_{i=0}^{10}$$
 
 ```latex
 \usepackage{geometry}
-\geometry{a4paper，margin=1in} % A4纸张，页边距1英寸
+\geometry{a4paper, margin=1in} % A4纸张，页边距1英寸
 ```
 
 #### `graphicx`
