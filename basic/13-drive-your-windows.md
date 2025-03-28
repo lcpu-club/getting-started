@@ -37,7 +37,7 @@ The term 'code' is not recognized as the name of a cmdlet, function, script file
 
 我那么大一只 “不接受更新” 哪里去了哼啊啊啊啊！
 
-这可太酸爽了，如果误用 ArchLinux 当生产服务器的同学们应该深有体会罢。话不多说，还是让我们看看远方的 2024 年 7 月 19 日吧：
+这可太酸爽了，如果误用 ArchLinux 当生产服务器的同学们应该深有体会罢。话不多说，还是让我们看看远方的 2024 年 7 月 19 日吧。
 
 ### 你的权限呢？
 
@@ -203,6 +203,8 @@ winget install Python Nodejs Git
 ```
 
 这导致我个人还是不太喜欢这玩意。和它的 Linux 亲戚相比，它实在是太没趣了；虽然它确实比从网上一个个地下载东西方便的多了！
+
+~~呜呜我们 Linux 小姐还是太温柔了~~
 
 ## 第五步
 
