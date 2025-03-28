@@ -43,13 +43,13 @@ The term 'conda' is not recognized as the name of a cmdlet, function, script fil
 
 Windows 大小姐永远极为关心自己的权限问题。
 
-用户账户控制（UAC）和 Defender 防病毒构成了双重枷锁。开发者编译程序要穿越证书签名、SmartScreen 过滤、Defender 误报三重关卡，其严格程度堪比过境海关。这种安全策略本质是微软对自家闺女衣服打的补丁——Windows 拥有全球最高的 43.2% 漏洞占比（CVE 2023 数据）。当然，这一套管理机制虽然牺牲了自由度，但是确实显著增加了Windows系统的安全性。
+用户账户控制（UAC）和 Defender 防病毒构成了双重枷锁。开发者编译程序要穿越证书签名、SmartScreen 过滤、Defender 误报三重关卡，其严格程度堪比过境海关。这种安全策略本质是微软对自家闺女衣服打的补丁——Windows 拥有全球最高的 43.2% 漏洞占比（CVE 2023 数据）。当然，这一套管理机制虽然牺牲了自由度，但是确实显著增加了 Windows 系统的安全性。
 
 这种“大小姐脾气”与开源生态形成鲜明对比：Linux 默认相信用户是系统的真正主人，所有组件都可审查、可修改、可替代。
 
 ::: warning 警告
 
-不要执行下面代码块的命令！你的Linux必然会在执行以下命令后坏掉！
+不要执行下面代码块的命令！你的 Linux 必然会在执行以下命令后坏掉！
 
 :::
 
@@ -76,9 +76,9 @@ Windows 其实还有不少别的大小姐脾气，足见其不好用，尤其是
 
 **对于小白，一定不要随便开 Admin。常规使用下，普通管理员基本足够。**
 
-这和 Linux 老手也不会随便用 `root` 的原因完全一样：权限太高、自由度太高、安全度太低且几乎毫无容错。Windows系统有很多防呆设计都藏在UAC中，而 Admin 会凭借自身的超高权限，力大砖飞地绕过去，然后…… 咳咳，大概率就造成 `sudo rm -rf /` 一样严重的错误了。
+这和 Linux 老手也不会随便用 `root` 的原因完全一样：权限太高、自由度太高、安全度太低且几乎毫无容错。Windows 系统有很多防呆设计都藏在 UAC 中，而 Admin 会凭借自身的超高权限，力大砖飞地绕过去，然后…… 咳咳，大概率就造成 `sudo rm -rf /` 一样严重的错误了。
 
-即使是Linux，非 `sudo` 情况下上述命令也属于危险命令，不会让你执行。但是对于权限甚至高于系统的`root`，有没有`sudo`都一个样，那就很酸爽了。
+即使是 Linux，非 `sudo` 情况下上述命令也属于危险命令，不会让你执行。但是对于权限甚至高于系统的`root`，有没有`sudo`都一个样，那就很酸爽了。
 
 :::
 
@@ -232,16 +232,16 @@ winget install Python Nodejs Git
 
 ~~呜呜我们 Linux 小姐还是太温柔了~~
 
-## 第五步：
+## 第五步
 
-> 咕咕咕，后面有再加，欢迎去[LCPU Getting Started](https://github.com/lcpu-club/getting-started)提Issue！
+> 咕咕咕，后面有再加，欢迎去[LCPU Getting Started](https://github.com/lcpu-club/getting-started)提 Issue！
 >
-> 目前计划：磁盘管理（尤其是Anaconda）
+> 目前计划：磁盘管理（尤其是 Anaconda）
 
 ## 结语
 
 结语我竟然不知道写些什么，令人感叹。
 
-或许 Windows 就是这么令人又爱又恨：不要看 Windows 有这么多缺陷，但是你要是作为一个新手玩 Linux 那更有你受的了，把系统搞坏几次是Linux的常态。
+或许 Windows 就是这么令人又爱又恨：不要看 Windows 有这么多缺陷，但是你要是作为一个新手玩 Linux 那更有你受的了，把系统搞坏几次是 Linux 的常态。
 
 当然，最好的使用方式当然是“都强都带”，因地制宜地使用对应的系统才是王道。
