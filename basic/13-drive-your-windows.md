@@ -218,7 +218,7 @@ winget install JanDeDobbeleer.OhMyPosh -s winget
 
 过一会你就会发现 Win 小姐自动给你安装好了 Oh My Posh！这确实很好用，这使得它非常适用于安装一些比较底层的包，例如 `Node.js` 等。
 
-不过这个 `winget` 有一个很巨大的问题：因为它是微软钦定的包管理器，所以自然极为依赖微软本身，导致它**只能安装**微软钦定的包！像 `yay` 一样从 GitHub 上面下载包然后给你直接 PKGBuild 了那更是不可能的！
+不过这个 `winget` 有一个很巨大的问题：因为它是微软钦定的包管理器，所以自然极为依赖微软本身，导致它**只能安装**微软钦定的包！像 `yay` 一样从 GitHub 上面下载包然后给你直接 build 了那更是不可能的！
 
 而更搞笑的事情在于，对于部分包而言，它甚至是直接把安装用的 exe 给你拉下来然后自动运行的。这种事情很抽象，不过既然是 Win 小姐，那也正常。
 
@@ -236,12 +236,12 @@ winget install Python Nodejs Git
 
 > 咕咕咕，后面有再加，欢迎去[LCPU Getting Started](https://github.com/lcpu-club/getting-started)提 Issue！
 >
-> 目前计划：磁盘管理（尤其是 Anaconda）
+> 目前计划：磁盘管理（尤其是 Anaconda），注册表
 
 ## 结语
 
 结语我竟然不知道写些什么，令人感叹。
 
-或许 Windows 就是这么令人又爱又恨：不要看 Windows 有这么多缺陷，但是你要是作为一个新手玩 Linux 那更有你受的了，把系统搞坏几次是 Linux 的常态。
+或许 Windows 就是这么令人又爱又恨：不要看 Windows 有这么多缺陷，但是你要是作为一个新手玩 Linux 那更有你受的了，把系统搞坏几次是 Linux 新手的常态。而对于一些非常简单的工作而言，用 Linux 更是有杀鸡焉用牛刀之嫌疑，此时 Windows 则成为一种良好的替代。
 
 当然，最好的使用方式当然是“都强都带”，因地制宜地使用对应的系统才是王道。

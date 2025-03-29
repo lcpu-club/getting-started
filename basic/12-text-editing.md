@@ -165,7 +165,7 @@ int main()
 
 如果你需要在文档中插入链接，则把链接文本放在中括号内，链接地址放在后面的括号中。
 
-例如，一个著名代码共享平台叫做 [Github](https://github.com)，其中 Github 这个超链接就是使用代码`[Github](https://github.com)`完成的。
+例如，一个著名代码共享平台叫做 [GitHub](https://github.com)，其中 Github 这个超链接就是使用代码`[GitHub](https://github.com)`完成的。
 
 对于图片型超链接，则把前面的中括号内的链接文本改为上述的图片路径即可。
 
@@ -407,8 +407,8 @@ $$\sum_{i=0}^{10}$$
 $$
 1+(-1)^n=
 \begin{cases}
-	0，& \text{if $n$ odd}\\
-    2，& \text{otherwise}
+	0, & \text{if $n$ odd}\\
+    2, & \text{otherwise}
 \end{cases}
 $$
 
@@ -538,9 +538,9 @@ Beamer 提供了多种主题和颜色主题，可以通过 \usetheme 和 \usecol
 
 ::: tip 特别提醒
 
-1。写 report 时请远离 Ctrl+S 成瘾症: 因为文章超长，每次保存后重新编译的时间足够你思考人生三遍。这边建议关掉自动编译，写完以后一口气编完，把等待时间用来补觉~~或植发~~。
+1. 写 report 时请远离 Ctrl+S 成瘾症: 因为文章超长，每次保存后重新编译的时间足够你思考人生三遍。这边建议关掉自动编译，写完以后一口气编完，把等待时间用来补觉~~或植发~~。
 
-2。用 `\tableofcontents` 自动生成目录后，可用 `tocloft` 包调整行距/缩进，防止目录页比正文还长 ~~(被暴打力)(悲)~~
+2. 用 `\tableofcontents` 自动生成目录后，可用 `tocloft` 包调整行距/缩进，防止目录页比正文还长 ~~(被暴打力)(悲)~~
 
 什么，你想让我写怎么用 `tocloft` 包? (╯‵□′)╯︵┻━┻
 
