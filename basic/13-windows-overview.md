@@ -1,4 +1,4 @@
-# Windows 大小姐调教指南 (?)
+# Windows 入门指南
 
 ::: info 本文信息
 作者：[The Only Ethene](https://github.com/ZangXuanyi)
