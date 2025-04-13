@@ -73,7 +73,7 @@ export default defineConfig({
               text: '12. 文本编辑: Markdown, LaTeX, Typst 和 Beamer',
               link: '/basic/12-text-editing'
             },
-            { text: '13. Windows 入门指南', link: '/basic/13-windows-overview' },
+            { text: '13. Windows 入门指南', link: '/basic/13-windows-overview' }
           ]
         },
         {
