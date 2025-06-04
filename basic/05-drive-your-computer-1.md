@@ -681,6 +681,7 @@ alias c++='c++-14'
     - 必须从英文官网下载：[WinRAR download free and support: WinRAR (win-rar.com)](https://www.win-rar.com/start.html?&L=0) 中文版无论是否购买正版都有广告，而英文版无论是否购买正版都没有广告，也不会有弹窗。30 天试用期不会减少。
     - **版本号必须大于 7.0.0！！！**这是因为，以前的版本有一个重要**高危漏洞**，可以无需以 `.exe` 后缀存放文件，执行恶意代码。
 - MacOS：
+  - `keka`: 优先推荐，免费开源Mac平台压缩软件，也通过App Store付费可以捐赠开发者。
   - `MacZip`：第三方压缩软件。官网：[MacZip - 专为 macOS 而设计的压缩软件！](https://maczip.cn/?locale=zh-CN)安装后，请自行更改默认的压缩包打开方式。使用此软件，有如下优点：
     - 安装后，设置内默认勾选压缩、提取文件忽略 `.DS_STORE` 文件。如果需要多平台传输压缩文件，这一特性很不错。
     - 支持的压缩包种类全，且支持加密压缩。
@@ -730,7 +731,7 @@ alias c++='c++-14'
 ## 4.6 文献管理
 
 - 所有平台：
-  - `Zotero`：开源且易用的文献管理软件。官网：https://www.zotero.org/
+  - `Zotero`：开源且易用的跨平台文献管理软件。官网：https://www.zotero.org/
   - `EndNote`：商业出品文献管理软件，收费。
 
 ## 4.7 杂项
@@ -744,7 +745,7 @@ alias c++='c++-14'
 - `Ventoy`: 多系统启动盘制作工具，在只有一个 U 盘的情况下想要安装多个系统就可以使用。下载：https://www.ventoy.net/cn/download.html
 - `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 macOS 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
-- `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
+- `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家以及🍎的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 - `Geek`：Windows 上的一款卸载软件，可以卸载各个软件的残留。官网：[Geek Uninstaller - the best FREE uninstaller](https://geekuninstaller.com/)
 - `Snipaste`：多平台通用的截图软件。功能强大，非常推荐。免费版即可。官网：https://zh.snipaste.com/
 - `Everything`：文件搜索工具，搜索速度快。官网：https://www.voidtools.com/zh-cn/support/everything/
