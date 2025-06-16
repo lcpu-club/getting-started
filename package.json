@@ -13,7 +13,6 @@
     "lint:fix": "prettier --write ."
   },
   "dependencies": {
-    "markdown-it-mathjax3": "^4.3.2",
-    "pnpm": "^10.12.1"
+    "markdown-it-mathjax3": "^4.3.2"
   }
 }
