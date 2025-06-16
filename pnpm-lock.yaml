@@ -11,9 +11,6 @@ importers:
       markdown-it-mathjax3:
         specifier: ^4.3.2
         version: 4.3.2
-      pnpm:
-        specifier: ^10.12.1
-        version: 10.12.1
     devDependencies:
       prettier:
         specifier: ^3.3.3
