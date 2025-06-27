@@ -208,7 +208,7 @@ winget install Python Nodejs Git
 
 从形式上看这玩意确实是和 Arch Linux 一样的，自然也支持 Linux 的各种各样的命令，例如在 PowerShell 中使用`ls`、`touch`这类的语句，以及使用`pacman`进行包管理等。
 
-MSYS2这类终端有一个更加高大上的名称：预构建工具链，与之类似的还有Cygwin等。这些工具链在Windows下的一大亮点在于引入了Unix世界依赖管理的哲学，Windows下复杂的开发依赖安装可以借助移植过来的包管理器轻松完成，例如MSYS2可以使用`pacman`快速且舒适地安装 GCC 等在 Windows 上难以安装的软件，非常方便。
+MSYS2 这类终端有一个更加高大上的名称：预构建工具链，与之类似的还有 Cygwin 等。这些工具链在 Windows 下的一大亮点在于引入了 Unix 世界依赖管理的哲学，Windows 下复杂的开发依赖安装可以借助移植过来的包管理器轻松完成，例如 MSYS2 可以使用`pacman`快速且舒适地安装 GCC 等在 Windows 上难以安装的软件，非常方便。
 
 需要注意的是，我们使用`pacman`安装的软件，其环境变量是在`MSYS2`的终端中；如果你需要在 Windows 的相关终端中使用这些终端，你需要将它们增加到**Windows 系统**的环境变量。部分 MSYS2 软件在 Windows 终端中可能行为异常，多版本 Python 等软件也有可能产生冲突，这都是正常现象；类似于`chmod 777`这种东西也是摆设。
 
