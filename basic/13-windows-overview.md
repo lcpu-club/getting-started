@@ -43,7 +43,7 @@ The term 'conda' is not recognized as the name of a cmdlet, function, script fil
 
 Windows 会在你最需要专注时突然宣布：“我要更新啦！”，并擅自决定 15 分钟后重启你的电脑。这种强制更新在温良的 Win7 那里还可以轻松地商量着关闭，但是在刁蛮的 Win11 那里这是不能碰的话题。这除了强制重启你的计算机，还有可能会影响你的系统环境，导致一些软件无法运行。
 
-如果误用 Arch Linux 这类滚动更新系统当生产服务器的同学们应该深有体会罢。话不多说，还是让我们看看 2024 年 7 月 19 日，全球多地同时发生的超大蓝屏事件吧。
+如果用 Arch Linux 这类滚动更新系统当生产服务器，然后一不小心`sudo pacman -Syu`的同学们应该对此深有体会。话不多说，还是让我们看看 2024 年 7 月 19 日，全球多地同时发生的超大蓝屏事件吧。
 
 ### 你的权限呢？
 
@@ -226,7 +226,16 @@ winget install Python Nodejs Git
 
 MSYS2 这类终端有一个更加高大上的名称：预构建工具链，与之类似的还有 Cygwin 等。这些工具链在 Windows 下的一大亮点在于引入了 Unix 世界依赖管理的哲学，Windows 下复杂的开发依赖安装可以借助移植过来的包管理器轻松完成，例如 MSYS2 可以使用`pacman`快速且舒适地安装 GCC 等在 Windows 上难以安装的软件，非常方便。
 
-需要注意的是，我们使用`pacman`安装的软件，其环境变量是在`MSYS2`的终端中；如果你需要在 Windows 的相关终端中使用这些终端，你需要将它们增加到**Windows 系统**的环境变量。部分 MSYS2 软件在 Windows 终端中可能行为异常，多版本 Python 等软件也有可能产生冲突，这都是正常现象；类似于`chmod 777`这种东西也是摆设。
+需要注意的是，我们使用`pacman`安装的软件，其环境变量是在`MSYS2`的终端中；如果你需要在 Windows 的相关终端中使用这些终端，你需要将它们增加到**Windows 系统**的环境变量。部分 MSYS2 软件在 Windows 终端中可能行为异常，多版本 Python 等软件也有可能产生冲突，这都是正常现象；类似于`chmod 777`这种东西也大概率是摆设。
+
+::: tip 不是摆设的情况
+
+在某些情况下，随便在MSYS2终端用 `chmod` 还可能带来麻烦，比如说git可能会遇到在Windows下发生意外的权限更改的情况。为了防止以上情况出现，建议Windows下使用以下命令：
+
+```powershell
+git config --global core.fileMode false
+```
+:::
 
 关于 MSYS2 的更进一步使用，我们可以参考大佬 wszqkzqk 的[blog](https://wszqkzqk.github.io/tags/#MSYS2)~~星外之神的恩情还不完~~。
 
