@@ -230,11 +230,12 @@ MSYS2 这类终端有一个更加高大上的名称：预构建工具链，与�
 
 ::: tip 不是摆设的情况
 
-在某些情况下，随便在MSYS2终端用 `chmod` 还可能带来麻烦，比如说git可能会遇到在Windows下发生意外的权限更改的情况。为了防止以上情况出现，建议Windows下使用以下命令：
+在某些情况下，随便在 MSYS2 终端用 `chmod` 还可能带来麻烦，比如说 git 可能会遇到在 Windows 下发生意外的权限更改的情况。为了防止以上情况出现，建议 Windows 下使用以下命令：
 
 ```powershell
 git config --global core.fileMode false
 ```
+
 :::
 
 关于 MSYS2 的更进一步使用，我们可以参考大佬 wszqkzqk 的[blog](https://wszqkzqk.github.io/tags/#MSYS2)~~星外之神的恩情还不完~~。
