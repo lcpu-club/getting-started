@@ -101,7 +101,7 @@ print("Updated Average:", calc(numbers))
 
 以下是运行代码后输出的信息：
 
-```arduino
+```plaintext
 Average: 30.0
 Traceback (most recent call last):
   File "example.py", line 10, in <module>
