@@ -694,7 +694,7 @@ alias c++='c++-14'
   - `mpv`: 一款开源播放器，需要用户自己配置。官网: https://mpv.io/
     - 配置可参考 [mpv - ArchWiki](https://wiki.archlinux.org/title/Mpv) 和 [mpv 播放器的使用引导](https://hooke007.github.io/unofficial/mpv_start.html)
 - MacOS：
-  - `IINA`：VLC 的重新封装，界面美观
+  - `IINA`：VLC 的重新封装，面向🍎优化，界面美观
 
 ## 4.3 下载器推荐
 
@@ -725,7 +725,7 @@ alias c++='c++-14'
 - Windows：
   - `HxD`：一款 Windows 二进制文本编辑器。官网：https://mh-nexus.de/en/hxd/
 - Linux：
-  - `Bless`：一款 Linux 二进制文本编辑器。
+  - `gHex`：GNOME Linux 二进制文本编辑器。
 
 ## 4.6 文献管理
 
@@ -733,7 +733,17 @@ alias c++='c++-14'
   - `Zotero`：开源且易用的文献管理软件。官网：https://www.zotero.org/
   - `EndNote`：商业出品文献管理软件，收费。
 
-## 4.7 杂项
+## 4.7 文件传输
+
+- 所有平台：
+  - `trzsz`: 是一个简约强大的兼容 tmux 的终端文件传输工具，可以在 SSH 中直接上传 (trz) 下载 (tsz) 文件，支持直接拖拽文件至终端上传，支持目录传输。丢掉你的 mobaxterm/scp 吧! [官网](https://github.com/trzsz/trzsz-go)
+  - `Localsend`: 多平台局域网文件传输软件。实用，且界面美观。iOS 和 macOS 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到: [GitHub - localsend/localsend](https://github.com/localsend/localsend)
+  - `filezilla`: 免费的多平台 FTP 解決方案。[官网](https://filezilla-project.org)
+  - `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
+- Windows:
+  - `WinSCP`: Windows FTP/SFTP 图形客户端，[官网](https://winscp.net)
+  
+## 4.8 杂项
 
 - 浏览器插件：
   - `Tampermonkey`：可以在网页上执行脚本。这里推荐一个脚本：[GitHub - zhuozhiyongde/PKU-Art: 一个北大教学网的美化样式](https://github.com/zhuozhiyongde/PKU-Art)。更多脚本可以在下面的网站找到：[Greasy Fork - 安全且实用的用户脚本站](https://greasyfork.org/zh-CN)
@@ -742,7 +752,6 @@ alias c++='c++-14'
 - `DISM++`: 国人出品的 Windows 优化工具，并整合了各类 Windows 工具，如 WIM/ESD 镜像备份和挂载等。下载：https://github.com/Chuyu-Team/Dism-Multi-language/releases
 - `rufus`: Windows 平台下 USB 安装介质烧录小工具。官网：https://rufus.ie/zh/
 - `Ventoy`: 多系统启动盘制作工具，在只有一个 U 盘的情况下想要安装多个系统就可以使用。下载：https://www.ventoy.net/cn/download.html
-- `Localsend`：多平台局域网文件传输软件。实用，且界面美观。iOS 和 macOS 可以在 App Store 找到。Android 可以在 Google Play 找到。各平台的安装包也可以在下面的网站找到：[GitHub - localsend/localsend](https://github.com/localsend/localsend)
 - `Magpie`：一款可以使画面清晰度提高的软件。例如，它可以使陈年老游戏的清晰度提升很多。工作原理为重采样，对显卡性能需求较高。官网：[GitHub - Blinue/Magpie](https://github.com/Blinue/Magpie)
 - `Handbrake`：使用 ffmpeg 作为后端的一款视频转码软件，全平台，支持红绿蓝三家的硬件加速以及你能想得和你想不到的各类视频音频格式。官网：[HandBrake: Open Source Video Transcoder](https://handbrake.fr/)
 - `Geek`：Windows 上的一款卸载软件，可以卸载各个软件的残留。官网：[Geek Uninstaller - the best FREE uninstaller](https://geekuninstaller.com/)
@@ -750,13 +759,13 @@ alias c++='c++-14'
 - `Everything`：文件搜索工具，搜索速度快。官网：https://www.voidtools.com/zh-cn/support/everything/
 - `FileConverter`：可以在很多文件格式间互转。官网：https://github.com/Tichau/FileConverter
 - `Calibre`：电子书管理器，也可以支持电子书格式转换。官网：https://calibre-ebook.com/zh_CN
-- `Croc`：也是一款文件互传软件。[官网](https://github.com/schollz/croc)。优点在于可以自动打洞，不局限于局域网。
 - `convertio`：也用于文件转换，是一个[网站](https://convertio.co)。
 - `wiztree`：磁盘空间分析工具。[官网](https://www.diskanalyzer.com)。Linux 上的替代品为 baobab。
 - `WallpaperEngine`：可以找到 Steam 创意工坊上的很多壁纸。建议从 Steam 购买并下载。
-- `WinSCP`: Windows FTP/SFTP 图形客户端，官网：https://winscp.net/
 - `Audacity`: 开源的全平台音频编辑软件，易于上手，官网：https://www.audacityteam.org/
 - `GIMP`: 开源的全平台图片编辑软件，官网：https://www.gimp.org/
+- `Supertuxkart`: 开源的跨平台 3D 赛车小游戏，可以作为显卡基准测试。
+- `SpeedCrunch`: 强大的开源跨平台函数计算器。
 - `Blender`: 开源的全平台 3D 编辑创作软件，使用广泛，官网：https://www.blender.org/
 - `Krita`: KDE 出品的开源全平台绘图软件，官网：https://krita.org/zh-cn/
 - `OBS`：一款免费录屏软件，适配多平台。有虚拟摄像头等功能。官网：[Open Broadcaster Software | OBS (obsproject.com)](https://obsproject.com/)
